@@ -1,0 +1,88 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Mask Input";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Mask Input
+
+				section.content
+
+					section.section.section-dark
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									.panel.panel-default
+										.panel-body
+
+											.row
+												.col-md-4
+													form
+														.form-group
+															label วันที่
+															input.form-control.mask-date(type="text")
+														.form-group
+															label เวลา
+															input.form-control.mask-time(type="text")
+														.form-group
+															label อีเมล
+															input.form-control.mask-email(type="text")
+														.form-group
+															label PIN
+															input.form-control.mask-pin(type="password")
+
+												.col-md-4
+													form
+														.form-group
+															label เบอร์โทรศัพท์
+															input.form-control.mask-phone(type="text")
+														.form-group
+															label เบอร์มือถือ
+															input.form-control.mask-mobile(type="text")
+														.form-group
+															label URL
+															input.form-control.mask-url(type="text")
+
+												.col-md-4
+													form
+														.form-group
+															label IP address
+															input.form-control.mask-ip(type="text")
+														.form-group
+															label MAC address
+															input.form-control.mask-mac(type="text")
+														.form-group
+															label ตัวเลข ชิดขวา ใส่ลูกน้ำ
+															input.form-control.mask-decimal(type="text")
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

@@ -1,0 +1,57 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Blank";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Topic
+
+				section.content
+
+					section.section.section-dark
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									// Breadcrumb
+									nav
+										ol.breadcrumb
+											li: a(href="") Home
+											li: a(href="") Page
+											li: a(href="") Sub Page
+											li.current Current
+
+									// Hint
+									.hint
+										h1.jumbo Blank
+
+						//- Footer include
+						include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

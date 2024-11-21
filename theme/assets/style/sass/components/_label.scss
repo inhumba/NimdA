@@ -1,0 +1,30 @@
+/* LABEL BADGE ALERT
+---------------------------------------*/
+
+.alert-link {
+	text-decoration: underline;
+}
+
+.label {
+	font-family: $font-boon400;
+	font-weight: normal;
+	font-size: 85%;
+	padding: .4em .6em;
+	&.label-block {
+		display: inline-block;
+		white-space: normal;
+	}
+}
+
+.badge {
+	font-family: $font-boon400;
+	font-weight: normal;
+	padding: 4px 7px 2px;
+	position: relative;
+	top: -2px;
+}
+
+.alert {
+	font-family: $font-boon500;
+	font-size: 1.1em;
+}

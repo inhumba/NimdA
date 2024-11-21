@@ -1,0 +1,114 @@
+/* LOGIN
+---------------------------------------*/
+
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.4em;
+	// font-family: $font-boon400;
+}
+@font-face {
+	font-family: 'Boon400';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-400.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-400.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Boon600';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-600.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-600.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-600.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+body.login {
+	background-color: $theme-color;
+}
+.wrapper {
+	height: 100%;
+}
+.panel-login {
+	background-color: $white;
+	font-family: $font-boon400;
+	@include font-size(15);
+	height: 100%;
+	width: 500px;
+	padding: 70px;
+	position: absolute;
+	right: 0;
+	@include box-shadow(0 0 5px rgba(0,0,0,.3));
+}
+.brand {
+	color: $theme-color;
+	font: {
+		family: $brand-font-family;
+		size: $brand-font-size;
+	}
+	margin-bottom: 25px;
+}
+.form-control {
+	// @include border-radius(4px);
+	&:focus {
+		border-color: $theme-color;
+		@include box-shadow(none);
+	}
+}
+label {
+	color: #999;
+	font-weight: normal;
+}
+small {
+	position: relative;
+	top: 2px;
+}
+.btn-theme {
+	background-color: $theme-color;
+	color: #FFF;
+	font-size: 1.1em;
+	margin: 5px 30px 0 0;
+	padding: 7px 30px;
+	&:hover, &:focus {
+		background-color: darken($theme-color, 5%);
+		color: #FFF;
+	}
+}
+.footer {
+	color: #999;
+	position: absolute;
+	bottom: 40px;
+	font-size: 0.7em;
+}
+a {
+	color: $link-color;
+	&:hover, &:focus {
+		color: $link-hover-color;
+		text-decoration: underline;
+	}
+}
+
+.panel-bg {
+	@include background-size(cover !important);
+	overflow: hidden;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+.caption {
+	color: #FFF;
+	font-family: $font-boon400;
+	position: absolute;
+	bottom: 40px;
+	left: 30px;
+	width: 40%;
+	> h3 {
+		font-size: 1.2em;
+	}
+	> p {
+		font-size: 1em;
+	}
+}
+
+

@@ -1,0 +1,273 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Table";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Table
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+									.panel.panel-default.panel-table
+										.panel-body
+
+											// Table Top
+											section.table-top
+												.row
+
+													// Table Bulk Action
+													.col-sm-3
+														.input-group
+															select.form-control.selectpicker.show-menu-arrow.show-tick
+																option Bulk Action
+																option Delete Selected
+															span.input-group-btn
+																button.btn.btn-default(type="button") Apply
+													.col-sm-3
+													.col-sm-3
+
+													// Table Search
+													.col-sm-3
+														.input-group
+															input.form-control(type="text", placeholder="search")
+															span.input-group-btn
+																button.btn.btn-default(type="button"): i.fa.fa-search
+
+										.table-responsive
+											table.table.table-striped.table-bordered.table-hover
+												thead
+													tr
+														th.th-bulkcheck
+															.checkbox.checkbox-success
+																input#bulk-checkedall.bulk-checkbox.styled(type="checkbox")
+																label
+														th.th-picture Picture
+														th.th-title Title
+														th.th-category Category
+														th.th-status Status
+														th.th-action Action
+
+												tbody
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox1.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-1.jpg", data-mfp-src="../uploads/pic-1.jpg")
+																img.tb-thumb(src="../uploads/pic-1.jpg")
+														td Lorem ipsum dolor sit amet
+														td News
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox2.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-2.jpg", data-mfp-src="../uploads/pic-2.jpg")
+																img.tb-thumb(src="../uploads/pic-2.jpg")
+														td แทกติคสไลด์บัสทับซ้อน เซ่นไหว้โปรเจ็คท็อปบูต
+														td News
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox3.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-3.jpg", data-mfp-src="../uploads/pic-3.jpg")
+																img.tb-thumb(src="../uploads/pic-3.jpg")
+														td Similique voluptates architecto illo, veniam nihil fugiat labore libero sint perferendis assumenda.
+														td News
+														td: input.sw-toggle-square-small(type="checkbox")
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox4.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-4.jpg", data-mfp-src="../uploads/pic-4.jpg")
+																img.tb-thumb(src="../uploads/pic-4.jpg")
+														td ไลฟ์มอบตัว คาราโอเกะดยุคแบคโฮไฟลต์ แพลนปาสเตอร์ยิมโค้ก มาเฟียช็อปเปอร์
+														td Events
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox5.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-5.jpg", data-mfp-src="../uploads/pic-5.jpg")
+																img.tb-thumb(src="../uploads/pic-5.jpg")
+														td คอนแท็คเบลอวิว เทคเพรส ดยุคสแล็ก คอมเมนท์ ผ้าห่มวอฟเฟิลอึมครึมเอาท์ดอร์เพาเวอร์ แล็บวาทกรรม เทคโนเครปสกายริคเตอร์ มาร์กฟรังก์คอนเซ็ปต์โต๊ะจีนแฟร์
+														td News
+														td: input.sw-toggle-square-small(type="checkbox")
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox6.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-6.jpg", data-mfp-src="../uploads/pic-6.jpg")
+																img.tb-thumb(src="../uploads/pic-6.jpg")
+														td Quos quas dolore, recusandae, saepe dicta consequuntur voluptatem tempore debitis ducimus incidunt reiciendis sunt error amet! Itaque eos architecto qui nobis dignissimos?
+														td Events
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox7.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-7.jpg", data-mfp-src="../uploads/pic-7.jpg")
+																img.tb-thumb(src="../uploads/pic-7.jpg")
+														td Lorem ipsum dolor sit amet
+														td Events
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox8.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-8.jpg", data-mfp-src="../uploads/pic-8.jpg")
+																img.tb-thumb(src="../uploads/pic-8.jpg")
+														td แทกติคสไลด์บัสทับซ้อน เซ่นไหว้โปรเจ็คท็อปบูต
+														td Events
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox9.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-9.jpg", data-mfp-src="../uploads/pic-9.jpg")
+																img.tb-thumb(src="../uploads/pic-9.jpg")
+														td ไลฟ์มอบตัว คาราโอเกะดยุคแบคโฮไฟลต์ แพลนปาสเตอร์ยิมโค้ก มาเฟียช็อปเปอร์
+														td News
+														td: input.sw-toggle-square-small(type="checkbox")
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+													tr
+														th(scope="row")
+															.checkbox.checkbox-success
+																input#checkbox10.bulk-checkbox.styled(type="checkbox")
+																label
+														td
+															a.magnify.mfp-image(href="../uploads/pic-10.jpg", data-mfp-src="../uploads/pic-10.jpg")
+																img.tb-thumb(src="../uploads/pic-10.jpg")
+														td Quos quas dolore, recusandae, saepe dicta consequuntur voluptatem tempore debitis ducimus incidunt reiciendis sunt error amet! Itaque eos architecto qui nobis dignissimos?
+														td News
+														td: input.sw-toggle-square-small(type="checkbox", checked)
+														td
+															a.btn.btn-success.btn-xs(href="") <i class="fa fa-pencil"></i> edit
+															a.btn.btn-warning.btn-xs(href="") <i class="fa fa-times"></i> delete
+
+										.panel-footer.separator
+
+											// Table Bottom
+											section.table-bottom
+												.row
+
+													// Table Meta
+													.col-sm-6
+														form.form-inline
+															.form-group
+																.input-group
+																	.input-group-addon Show
+																	select.form-control.selectpicker.show-menu-arrow.show-tick
+																		option 10
+																		option 20
+																		option 50
+																		option 100
+																	.input-group-addon Showing <b>1 - 10</b> of <b>100</b> entries
+
+
+													// Table Pagination
+													.col-sm-6
+														ul.pagination
+															li.disabled: a(href="") «
+															li: a(href="") ‹
+															li.active: a(href="") 1
+															li: a(href="") 2
+															li: a(href="") 3
+															li: a(href="") 4
+															li: a(href="") 5
+															li: a(href="") ›
+															li: a(href="") »
+
+								//- .col-xs-12
+								//- 	.panel.panel-default.panel-table
+								//- 		.panel-body
+
+								//- 			// Table Top
+								//- 			section.table-top
+								//- 				.row
+
+								//- 					// Table Header
+								//- 					.col-xs-12
+								//- 						h3 Report
+
+
+
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

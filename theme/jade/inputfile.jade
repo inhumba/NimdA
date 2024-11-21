@@ -1,0 +1,114 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Input File";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Input File
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+											label Default
+											input(type="file")
+
+											p
+											label With style
+											input.filestyle(type="file", data-icon="false", data-input="false")
+
+											p
+											label With input field
+											input.filestyle(type="file", data-icon="false")
+
+											p
+											label With placeholder
+											input.filestyle(type="file", data-icon="false", data-placeholder="No file")
+
+											p
+											label Edit button text
+											input.filestyle(type="file", data-icon="false", data-placeholder="No file", data-buttonText="Browse file")
+
+											p
+											label With icon
+											input.filestyle(type="file", data-placeholder="No file", data-buttonText="Browse file")
+
+											p
+											label With custom icon
+											input.filestyle(type="file", data-placeholder="No file", data-buttonText="Browse file", data-iconName="glyphicon glyphicon-inbox")
+
+											p
+											label Disabled
+											input.filestyle(type="file", data-icon="false", data-placeholder="Disabled", data-buttonText="Browse file", data-disabled="true")
+
+											p
+											label Front button
+											input.filestyle(type="file", data-icon="false", data-placeholder="No file", data-buttonText="Browse file", data-buttonBefore="true")
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+											p
+											label With color
+											input.filestyle(type="file", data-icon="false", data-placeholder="Primary", data-buttonName="btn-primary")
+											<br>
+											input.filestyle(type="file", data-icon="false", data-placeholder="Success", data-buttonName="btn-success")
+											<br>
+											input.filestyle(type="file", data-icon="false", data-placeholder="Info", data-buttonName="btn-info")
+											<br>
+											input.filestyle(type="file", data-icon="false", data-placeholder="Warning", data-buttonName="btn-warning")
+											<br>
+											input.filestyle(type="file", data-icon="false", data-placeholder="Danger", data-buttonName="btn-danger")
+
+											p
+											label Custom width
+											.row
+												.col-xs-6
+													.form-group
+														input.filestyle(type="file", data-icon="false", data-placeholder="6/12")
+												.col-xs-6
+													.form-group
+														input.filestyle(type="file", data-icon="false", data-placeholder="6/12")
+
+											p
+											label Custom size
+											input.filestyle(type="file", data-icon="false", data-placeholder="Big", data-size="lg")
+											<br>
+											input.filestyle(type="file", data-icon="false", data-placeholder="Normal")
+											<br>
+											input.filestyle(type="file", data-icon="false", data-placeholder="Small", data-size="sm")
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

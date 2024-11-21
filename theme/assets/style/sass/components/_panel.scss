@@ -1,0 +1,117 @@
+/* PANEL
+---------------------------------------*/
+
+.panel {
+	background-color: #FFF;
+	font-family: $font-boon400;
+	margin-bottom: 20px;
+	@include box-shadow(none);
+	@include border-radius(4px);
+	.panel-heading {
+		padding: 15px 20px;
+		position: relative;
+		&.separator::after {
+			background-color: rgba(0,0,0,.1);
+			content: "";
+			height: 1px;
+			position: absolute;
+			right: 20px;
+			bottom: 0;
+			left: 20px;
+		}
+	}
+}
+.panel-default {
+	border-color: rgba(0,0,0,.1);
+	> .panel-heading {
+		background-color: #FFF;
+		border-color: #FFF;
+	}
+}
+.panel-title {
+	font-family: $font-boon500;
+	font-size: 1.2em;
+}
+.panel-body {
+	padding: 20px;
+}
+.panel-footer {
+	background-color: #FFF;
+	border-top: 1px solid #FFF;
+	padding: 15px 20px;
+	@include border-radius(0 0 3px 3px);
+	&.separator {
+		border-top-color: rgba(0,0,0,.1);
+	}
+}
+.panel-invert {
+	&.panel {
+		background-color: $theme-color;
+	}
+	&.panel-default {
+		border-color: $theme-color;
+		> .panel-heading {
+			background-color: $theme-color;
+			border-color: $theme-color;
+		}
+	}
+	.panel-footer {
+		background-color: $theme-color;
+	}
+}
+.panel-transparent {
+	&.panel {
+		background-color: transparent;
+	}
+	&.panel-default {
+		border-color: transparent;
+		> .panel-heading {
+			background-color: transparent;
+			border-color: transparent;
+			&.separator::after {
+				background-color: transparent;
+			}
+			&.separator {
+				border-color: rgba(0,0,0,.1);
+			}
+		}
+	}
+	.panel-footer {
+		background-color: transparent;
+		border-color: transparent;
+		&.separator {
+			border-color: rgba(0,0,0,.1);
+		}
+	}
+}
+
+.panel-heading.has-button {
+	padding-bottom: 15px;
+	overflow: hidden;
+	.panel-title {
+		float: left;
+		margin-top: 6px;
+	}
+	.panel-heading-button {
+		float: right;
+	}
+}
+
+.panel-parent {
+	background-color: #FBFBFB;
+	border-bottom: none;
+	margin: 0 15px;
+	padding: 10px 15px;
+	overflow: hidden;
+	@include border-radius(4px 4px 0 0);
+	@include opacity(.7);
+	.back-link {
+		display: inline-block;
+		float: left;
+		font-size: 0.9em;
+		margin: 3px 7px 2px 0;
+	}
+	.panel-title {
+		float: left;
+	}
+}

@@ -1,0 +1,155 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Drag & Drop";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Drag & Drop
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+									h4.title Group 1
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+
+											#dnd-1.dd
+												ol.dd-list
+													li.dd-item(data-id="1")
+														.dd-handle Item 1
+													li.dd-item(data-id="2")
+														.dd-handle Item 2
+													li.dd-item(data-id="3")
+														.dd-handle Item 3
+														ol.dd-list
+															li.dd-item(data-id="4")
+																.dd-handle Item 4
+															li.dd-item(data-id="5")
+																.dd-handle Item 5
+																ol.dd-list
+																	li.dd-item(data-id="6")
+																		.dd-handle Item 6
+																	li.dd-item(data-id="7")
+																		.dd-handle Item 7
+													li.dd-item(data-id="8")
+														.dd-handle Item 8
+													li.dd-item(data-id="9")
+														.dd-handle Item 9
+														ol.dd-list
+															li.dd-item(data-id="10")
+																.dd-handle Item 10
+
+										.panel-footer.separator
+
+											h5._mb-10 Output
+											textarea#dnd-output-1.form-control
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+
+											#dnd-2.dd
+												ol.dd-list
+													li.dd-item(data-id="11")
+														.dd-handle Item 11
+													li.dd-item(data-id="12")
+														.dd-handle Item 12
+														ol.dd-list
+															li.dd-item(data-id="13")
+																.dd-handle Item 13
+																ol.dd-list
+																	li.dd-item(data-id="14")
+																		.dd-handle Item 14
+															li.dd-item(data-id="15")
+																.dd-handle Item 15
+
+										.panel-footer.separator
+
+											h5._mb-10 Output
+											textarea#dnd-output-2.form-control
+
+								hr
+
+								.col-xs-12
+									h4.title Group 2
+
+								.col-xs-12
+									.panel.panel-default
+										table.table.table-bordered.table-dnd
+											thead
+												tr
+													th.th-no No.
+													th.th-item Items
+
+											tbody
+												tr
+													td
+														.label.label-info 1
+														.label.label-info 2
+														.label.label-info 3
+														.label.label-info 4
+														.label.label-info 5
+													td
+														#dnd-3.dd
+															ol.dd-list
+																li.dd-item(data-id="1")
+																	.dd-handle Item A
+																		button.btn.btn-warning.btn-xs.delete
+																			i.fa.fa-times
+																li.dd-item(data-id="2")
+																	.dd-handle Item B
+																		button.btn.btn-warning.btn-xs.delete
+																			i.fa.fa-times
+																li.dd-item(data-id="3")
+																	.dd-handle Item C
+																		button.btn.btn-warning.btn-xs.delete
+																			i.fa.fa-times
+																li.dd-item(data-id="4")
+																	.dd-handle Item D
+																		button.btn.btn-warning.btn-xs.delete
+																			i.fa.fa-times
+																li.dd-item(data-id="5")
+																	.dd-handle Item E
+																		button.btn.btn-warning.btn-xs.delete
+																			i.fa.fa-times
+
+										.panel-footer.separator
+
+											h5._mb-10 Output
+											textarea#dnd-output-3.form-control
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

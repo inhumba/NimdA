@@ -1,0 +1,361 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Tab";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Tab
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									// Tab Type
+									.the-tabs
+
+										// Outer Tab Menu
+										ul.nav.nav-tabs
+											li.active: a(href="#outer-tab-left-1", data-toggle="tab") Outer Tab Left #1
+											li: a(href="#outer-tab-left-2", data-toggle="tab") Outer Tab Left #2
+											li: a(href="#vertical-tab", data-toggle="tab") Vertical Tab
+											li.pull-right: a(href="#outer-tab-right-1", data-toggle="tab") Outer Tab Right #1
+											li.pull-right: a(href="#outer-tab-right-2", data-toggle="tab") Outer Tab Right #2
+
+										// Outer Tab Area
+										.tab-content
+
+											// Outer Tab Left #1
+											#outer-tab-left-1.tab-pane.active
+												.panel.panel-default
+													.panel-heading
+														h2.panel-title Outer Tab Left #1
+													.panel-body
+
+														.row
+
+															.col-sm-7
+
+																// Tab Type
+																.the-tabs
+
+																	// Inner Tab Menu
+																	ul.nav.nav-tabs
+																		li.active: a(href="#inner-tab-1", data-toggle="tab") Inner Tab #1
+																		li: a(href="#inner-tab-2", data-toggle="tab") Inner Tab #2
+																		li: a(href="#inner-tab-3", data-toggle="tab") Inner Tab #3
+																		li.pull-right: a(href="#inner-tab-right", data-toggle="tab") Inner Tab Right
+
+																	// Inner Tab Area
+																	.tab-content
+
+																		// Inner Tab #1
+																		#inner-tab-1.tab-pane.active
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Tab #1
+
+																		// Inner Tab #2
+																		#inner-tab-2.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Tab #2
+
+																		// Inner Tab #3
+																		#inner-tab-3.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Tab #3
+
+																		// Inner Tab Right
+																		#inner-tab-right.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Tab Right
+
+															.col-sm-5
+
+																// Tab Type
+																.the-tabs
+
+																	// Inner Tab Justified Menu
+																	ul.nav.nav-tabs.nav-justified
+																		li.active: a(href="#justified-tab-1", data-toggle="tab") Justified Tab #1
+																		li: a(href="#justified-tab-2", data-toggle="tab") Justified Tab #2
+																		li: a(href="#justified-tab-3", data-toggle="tab") Justified Tab #3
+
+																	// Justified Tab Area
+																	.tab-content
+
+																		// Justified Tab #1
+																		#justified-tab-1.tab-pane.active
+																			.panel.panel-default
+																				.panel-body
+																					h3 Justified Tab #1
+
+																		// Justified Tab #2
+																		#justified-tab-2.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Justified Tab #2
+
+																		// Justified Tab #3
+																		#justified-tab-3.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Justified Tab #3
+
+											// Outer Tab Left #2
+											#outer-tab-left-2.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Tab Left #2
+
+											// Vertical Tab
+											#vertical-tab.tab-pane
+												.panel.panel-default
+													.panel-heading
+														h2.panel-title Vertical Tab
+													.panel-body
+
+														.row
+
+															.col-sm-6
+
+																// Tab Type
+																.the-tabs
+
+																	// Tab Left Menu
+																	ul.nav.nav-tabs.tabs-left
+																		li.active: a(href="#left-tab-1", data-toggle="tab") Left Tab #1
+																		li: a(href="#left-tab-2", data-toggle="tab") Left Tab #2
+																		li: a(href="#left-tab-3", data-toggle="tab") Left Tab #3
+
+																	// Left Tab Area
+																	.tab-content
+
+																		// Left Tab #1
+																		#left-tab-1.tab-pane.active
+																			.panel.panel-default
+																				.panel-body
+																					h3 Left Tab #1
+																					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste distinctio repellat rem quam, dolores vel qui cumque, porro facere nobis. Deserunt facere vitae sit repudiandae neque, doloribus totam itaque excepturi.
+
+																		// Left Tab #2
+																		#left-tab-2.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Left Tab #2
+																					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, quod impedit. Blanditiis reprehenderit, officiis, veniam accusamus similique voluptatum autem delectus?
+
+																		// Left Tab #3
+																		#left-tab-3.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Left Tab #3
+																					p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum saepe provident repudiandae, a inventore, quas laboriosam neque ea tempore in maiores fuga optio quasi consequatur.
+
+															.col-sm-6
+
+																// Tab Type
+																.the-tabs
+
+																	// Tab Right Menu
+																	ul.nav.nav-tabs.tabs-right
+																		li.active: a(href="#right-tab-1", data-toggle="tab") Right Tab #1
+																		li: a(href="#right-tab-2", data-toggle="tab") Right Tab #2
+																		li: a(href="#right-tab-3", data-toggle="tab") Right Tab #3
+
+																	// Right Tab Area
+																	.tab-content
+
+																		// Right Tab #1
+																		#right-tab-1.tab-pane.active
+																			.panel.panel-default
+																				.panel-body
+																					h3 Right Tab #1
+																					p คอร์ปอเรชั่น บอยคอตสต็อค เอเซียวันเวย์ บริกรซิตี้ หลวงพี่ตุ๊กตุ๊ก คลับเก๋ากี้ สจ๊วตบิล คัตเอาต์ ซีรีส์ฟยอร์ด ไทยแลนด์แบล็กแจ็กเก็ตแดรี่ ซูฮกเอสเพรสโซไฮเทคลีเมอร์คอมเมนท์ คอมเมนท์แตงโมไทยแลนด์ ซาร์สถาปัตย์ฮิน็อก อิสรชน บอยคอตต์ริกเตอร์ป๊อก
+
+																		// Right Tab #2
+																		#right-tab-2.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Right Tab #2
+																					p พุทธภูมิ เรซิ่นแซมบ้ามายองเนส ฟลุตเทอร์โบคีตกวีม้านั่ง ตัวตนฮาร์ดอีแต๋นไทยแลนด์กาญจนาภิเษก กาญจนาภิเษกมอนสเตอร์ปอดแหก มาร์ตชนะเลิศฮ่องเต้ แอปเปิล รุสโซอุรังคธาตุ นพมาศอัลมอนด์ มือถือแพ็ค ออกแบบถ่ายทำวาริชศาสตร์ งั้น เยอบีราสตีลวิลเลจ ชาร์ต ราเมน ครัวซองครัวซองบอยคอตจ๊าบ
+
+																		// Right Tab #3
+																		#right-tab-3.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Right Tab #3
+																					p แผดเผาปอดแหกโอเวอร์สามแยกโปรดักชั่น เคลื่อนย้ายคอนโดมิเนียม ปิโตรเคมีโปสเตอร์เดบิตไฮบริด ฮิตจิตพิสัยมือถือไฮเปอร์รีวิว พาเหรดเฟรชมาม่า ตรวจทานควีนอุรังคธาตุแอนด์เฉิ่ม
+
+											// Outer Tab Right #1
+											#outer-tab-right-1.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Tab Right #1
+
+											// Outer Tab Right #2
+											#outer-tab-right-2.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Tab Right #2
+
+									// Pill Type
+									.the-pills
+
+										// Outer Tab Menu
+										ul.nav.nav-pills
+											li.active: a(href="#outer-pill-left-1", data-toggle="tab") Outer Pill #1
+											li: a(href="#outer-pill-left-2", data-toggle="tab") Outer Pill #2
+											li: a(href="#outer-pill-3", data-toggle="tab") Pill #3
+											li: a(href="#outer-pill-4", data-toggle="tab") Pill #4
+											li: a(href="#outer-pill-5", data-toggle="tab") Pill #5
+											li.pull-right: a(href="#outer-pill-right", data-toggle="tab") Outer Pill Right
+
+										// Outer Tab Area
+										.tab-content
+
+											// Outer Pill Left #1
+											#outer-pill-left-1.tab-pane.active
+												.panel.panel-default
+													.panel-heading
+														h2.panel-title Outer Pill Left #1
+													.panel-body
+
+														.row
+
+															.col-sm-7
+
+																// Pill Type
+																.the-pills
+
+																	// Inner Pill Menu
+																	ul.nav.nav-pills
+																		li.active: a(href="#inner-pill-1", data-toggle="tab") Inner Pill #1
+																		li: a(href="#inner-pill-2", data-toggle="tab") Inner Pill #2
+																		li: a(href="#inner-pill-3", data-toggle="tab") Inner Pill #3
+																		li.pull-right: a(href="#inner-pill-right", data-toggle="tab") Inner Pill Right
+
+																	// Inner Pill Area
+																	.tab-content
+
+																		// Inner Pill #1
+																		#inner-pill-1.tab-pane.active
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Pill #1
+
+																		// Inner Pill #2
+																		#inner-pill-2.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Pill #2
+
+																		// Inner Pill #3
+																		#inner-pill-3.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Pill #3
+
+																		// Inner Pill Right
+																		#inner-pill-right.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Inner Pill Right
+
+															.col-sm-5
+
+																// Pill Type
+																.the-pills
+
+																	// Inner Pill Justified Menu
+																	ul.nav.nav-pills.nav-justified
+																		li.active: a(href="#justified-pill-1", data-toggle="tab") Justified Pill #1
+																		li: a(href="#justified-pill-2", data-toggle="tab") Justified Pill #2
+																		li: a(href="#justified-pill-3", data-toggle="tab") Justified Pill #3
+
+																	// Justified Pill Area
+																	.tab-content
+
+																		// Justified Pill #1
+																		#justified-pill-1.tab-pane.active
+																			.panel.panel-default
+																				.panel-body
+																					h3 Justified Pill #1
+
+																		// Justified Pill #2
+																		#justified-pill-2.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Justified Pill #2
+
+																		// Justified Pill #3
+																		#justified-pill-3.tab-pane
+																			.panel.panel-default
+																				.panel-body
+																					h3 Justified Pill #3
+
+											// Outer Pill Left #2
+											#outer-pill-left-2.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Pill Left #2
+
+											// Outer Pill #3
+											#outer-pill-3.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Pill #3
+
+											// Outer Pill #4
+											#outer-pill-4.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Pill #4
+
+											// Outer Pill #5
+											#outer-pill-5.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Pill #5
+
+											// Outer Pill Right
+											#outer-pill-right.tab-pane
+												.panel.panel-default
+													.panel-body
+														h3 Outer Pill Right
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

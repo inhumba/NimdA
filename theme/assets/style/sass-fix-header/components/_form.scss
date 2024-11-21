@@ -1,0 +1,58 @@
+/* FORM
+---------------------------------------*/
+
+// .has-success
+.form-control {
+	// font-family: $font-boon400;
+	@extend %roboto-normal;
+	// .has-success &, .has-warning &, .has-error &,
+	&:focus {
+		border-color: $theme-color;
+		@include box-shadow(none);
+	}
+}
+
+form {
+	label {
+		@extend %roboto-medium;
+		// font-family: $font-boon500;
+		// font-weight: normal;
+		font-size: 1.1em;
+	}
+}
+
+.has-feedback {
+	.input-group-addon.front-icon {
+		background-color: transparent;
+	}
+}
+.has-feedback-front {
+	.form-control {
+		padding-right: 12px;
+		padding-left: 33px;
+	}
+	.form-control-feedback {
+		right: auto;
+		left: 0;
+	}
+}
+.has-feedback label ~ .form-control-feedback {
+	top: 27px;
+}
+
+.btn {
+	@extend %roboto-medium;
+	// font-family: $font-boon500;
+}
+.btn-link {
+	color: $theme-color;
+	> .badge {
+		background-color: $theme-color;
+	}
+}
+a {
+	> .badge {
+		background-color: $theme-color;
+	}
+}
+

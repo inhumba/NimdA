@@ -1,0 +1,125 @@
+/* FONTS
+---------------------------------------*/
+
+@font-face {
+	font-family: 'Boon300';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-300.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-300.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Boon300i';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-300i.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-300i.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-300i.ttf') format('truetype');
+	font-weight: 300;
+	font-style: oblique;
+}
+@font-face {
+	font-family: 'Boon400';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-400.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-400.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Boon400i';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-400i.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-400i.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-400i.ttf') format('truetype');
+	font-weight: 400;
+	font-style: oblique;
+}
+@font-face {
+	font-family: 'Boon500';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-500.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-500.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-500.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Boon500i';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-500i.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-500i.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-500i.ttf') format('truetype');
+	font-weight: 500;
+	font-style: oblique;
+}
+@font-face {
+	font-family: 'Boon600';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-600.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-600.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-600.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Boon600i';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-600i.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-600i.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-600i.ttf') format('truetype');
+	font-weight: 600;
+	font-style: oblique;
+}
+@font-face {
+	font-family: 'Boon700';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-700.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-700.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-700.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Boon700i';
+	src: url('#{$fontpath}/boon/fonts/woff2-ttf/Boon-700i.woff2') format('woff2'),
+		 url('#{$fontpath}/boon/fonts/woff-ttf/Boon-700i.woff') format('woff'),
+		 url('#{$fontpath}/boon/fonts/ttf/Boon-700i.ttf') format('truetype');
+	font-weight: 700;
+	font-style: oblique;
+}
+
+%roboto-light {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+%roboto-lighti {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	font-style: oblique;
+}
+
+%roboto-normal {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+%roboto-normali {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: oblique;
+}
+
+%roboto-medium {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+
+%roboto-mediumi {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	font-style: oblique;
+}
+
+%roboto-bold {
+	font-family: "Roboto", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}

@@ -1,0 +1,223 @@
+/* MEDIA QUERY (Desktop First)
+---------------------------------------*/
+
+// Desktop
+@media only screen and (max-width: 1199px) {
+
+}
+
+
+// Tablet
+@media only screen and (max-width: 991px) {
+
+	.header {
+		margin-bottom: 0;
+		padding-top: 20px;
+		.child & {
+			padding-top: 0;
+		}
+	}
+
+	.logowrap {
+		float: none;
+		margin: 0 auto;
+		padding: 20px 0;
+		@include box-shadow(none);
+		.child & {
+			float: left;
+		}
+	}
+
+	.brand-logo {
+		@include replace-text-with-dimensions("logo-small.png", center, center);
+		margin: 0 auto;
+		> a {
+			height: image-height("logo-small.png");
+		}
+	}
+
+	.headerinfo {
+		.child & {
+			> .btn {
+				float: left;
+			}
+		}
+	}
+
+	.contact-bar {
+		margin-top: 0;
+		padding: 5px 0;
+		text-align: center;
+		> li {
+			float: none;
+			font-size: 1em;
+			margin: 0 -6px 0 0;
+			padding: 0;
+			text-align: center;
+			> a {
+				padding: 0 43px;
+			}
+			.fa {
+				font-size: 1em;
+				margin-right: 0;
+				position: relative;
+				top: 2px;
+			}
+			+ li {
+				border-left: 1px solid #fff;
+				border-left: 1px solid rgba(256,256,256,.5);
+			}
+		}
+	}
+
+	.mainnav {
+		> li {
+			> a {
+				padding-left: 60px;
+				> .fa {
+					right: 60px;
+				}
+				&:hover {
+					padding-left: 65px;
+					> .fa {
+						right: 65px;
+					}
+				}
+			}
+		}
+	}
+
+	.footnav {
+		border-bottom: 1px solid #fff;
+		margin-bottom: 20px;
+		padding-bottom: 15px;
+		> li {
+			> a {
+				font-size: 1.1em;
+			}
+		}
+	}
+
+
+	// Retina Display
+	@media
+	only screen and (-webkit-min-device-pixel-ratio: 2) 		and (max-width: 991px),
+	only screen and (   min--moz-device-pixel-ratio: 2) 		and (max-width: 991px),
+	only screen and (     -o-min-device-pixel-ratio: 2/1) 		and (max-width: 991px),
+	only screen and (        min-device-pixel-ratio: 2) 		and (max-width: 991px),
+	only screen and (                min-resolution: 192dpi) 	and (max-width: 991px),
+	only screen and (                min-resolution: 2dppx) 	and (max-width: 991px) {
+
+		.brand-logo {
+			background-image: url(#{$imgpath}/logo-small@2x.png);
+			@include background-size(100%);
+		}
+
+	}
+
+}
+
+
+
+// Mobile
+@media only screen and (max-width: 767px) {
+
+	.title-page {
+		padding: 17px 15px 13px;
+	}
+	.content {
+		.editor {
+			padding: 20px 15px;
+		}
+	}
+
+	.bottom {
+		> .container {
+			background-image: none;
+			padding-top: 0;
+			padding-bottom: 0;
+		}
+	}
+
+}
+
+// Small
+@media only screen and (max-width: 640px) {
+
+	body {
+		background: url(#{$imgpath}/bg-body-footer.jpg) no-repeat center bottom,
+		url(#{$imgpath}/bg-body-top@small.jpg) no-repeat left top;
+	}
+
+	.header {
+		.child & {
+			background-image: none;
+		}
+	}
+
+	.brand-logo {
+		.child & {
+			background-image: url(#{$uploadpath}/child-logo@2x.png);
+			height: 61px;
+			width: 129px;
+			@include background-size(100%);
+		}
+	}
+
+	.headerinfo {
+		.child & {
+			margin-top: 32px;
+			> .btn {
+				float: left;
+				font-size: 0.8em;
+				margin-left: 10px;
+				padding: 7px 15px 5px;
+			}
+		}
+	}
+
+	.mainnav {
+		> li {
+			height: 75px;
+			> a {
+				line-height: 75px;
+				> .fa {
+					top: 38%;
+				}
+			}
+		}
+	}
+
+	.othernav {
+		> a, .collapsed {
+			height: 75px;
+			line-height: 75px;
+			> span {
+				font-size: 0.8em;
+				top: 20%;
+				right: 50px;
+			}
+		}
+		ul {
+			> li {
+				> a {
+					font-size: 0.9em;
+					padding: 10px 10px 10px 60px;
+					&:hover {
+						padding-left: 65px;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+
+// EXTRA SMALL
+@media only screen and (max-width: 350px) {
+
+
+}
+
+

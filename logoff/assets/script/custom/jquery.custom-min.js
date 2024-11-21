@@ -1,0 +1,1 @@
+$(function(){jQuery().inputmask&&$(".mask-pin").inputmask("9{6}",{placeholder:"*"})});

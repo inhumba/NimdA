@@ -1,0 +1,95 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Toggle";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Toggle
+
+				section.content
+
+					section.section
+
+						.container-fluid
+							.row
+
+								.col-xs-3
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Size
+										.panel-body
+											h6._mb-5 Small
+											input.sw-toggle-small(type="checkbox", checked)
+											input.sw-toggle-small(type="checkbox")
+											p
+											h6._mb-5 Normal
+											input.sw-toggle(type="checkbox", checked)
+											input.sw-toggle(type="checkbox")
+											p
+											h6._mb-5 Large
+											input.sw-toggle-large(type="checkbox", checked)
+											input.sw-toggle-large(type="checkbox")
+								.col-xs-3
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Square
+										.panel-body
+											h6._mb-5 Small
+											input.sw-toggle-square-small(type="checkbox", checked)
+											input.sw-toggle-square-small(type="checkbox")
+											p
+											h6._mb-5 Normal
+											input.sw-toggle-square(type="checkbox", checked)
+											input.sw-toggle-square(type="checkbox")
+											p
+											h6._mb-5 Large
+											input.sw-toggle-square-large(type="checkbox", checked)
+											input.sw-toggle-square-large(type="checkbox")
+
+								.col-xs-3
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title With Text
+										.panel-body
+											.sw-text
+												.sw-input-field
+													input.sw-toggle.sw-toggle-status(type="checkbox", data-on-text="Publish", data-off-text="Draft")
+												.sw-status-field
+
+								.col-xs-3
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Disabled
+										.panel-body
+											input.sw-toggle-small(type="checkbox", checked, disabled)
+											input.sw-toggle(type="checkbox", disabled)
+											input.sw-toggle-square-large(type="checkbox", disabled)
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

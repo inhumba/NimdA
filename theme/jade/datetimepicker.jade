@@ -1,0 +1,91 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Date Time Picker";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Date Time Picker
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-md-8
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Picker
+										.panel-body
+
+											.form-horizontal
+												.form-group
+													label.control-label.col-xs-3 Date & Time
+													.col-xs-9
+														.input-group
+															.input-group-addon.front-icon: i.fa.fa-calendar
+															input.form-control.datetime-picker.mask-datetime-noseconds(type="text", data-date-format="dd/mm/yyyy hh:ii")
+
+												.form-group
+													label.control-label.col-xs-3 Date
+													.col-xs-9
+														.input-group
+															.input-group-addon.front-icon: i.fa.fa-calendar
+															input.form-control.date-picker.mask-date(type="text", data-date-format="dd/mm/yyyy")
+
+												.form-group
+													label.control-label.col-xs-3 Time
+													.col-xs-9
+														.input-group
+															.input-group-addon.front-icon: i.fa.fa-clock-o
+															input.form-control.time-picker.mask-time-noseconds(type="text", data-date-format="hh:ii")
+
+												.form-group
+													label.control-label.col-xs-3 Time (AM. & PM.)
+													.col-xs-9
+														.input-group
+															.input-group-addon.front-icon: i.fa.fa-clock-o
+															input.form-control.time-picker-ampm(type="text", data-date-format="HH:ii P")
+
+								.col-md-4
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Inline
+										.panel-body
+
+											form
+												.form-group.has-feedback.has-feedback-fronta
+													label Date & Time
+													input#datetime-mirror.form-control.mask-datetime-noseconds(type="text")
+													.datetime-picker-inline(type="text", data-date-format="dd/mm/yyyy hh:ii")
+													span.glyphicon.glyphicon-calendar.form-control-feedback
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

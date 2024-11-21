@@ -1,0 +1,232 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Select";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Select
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+											label Default
+											select.form-control
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorado
+													option New Mexico
+													option North Dakota
+											p
+											label Single select
+											select.form-control.selectpicker(title="กรุณาเลือก")
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorado
+													option New Mexico
+													option North Dakota
+
+											p
+											label Multiple select
+											select.form-control.selectpicker(title="กรุณาเลือก", multiple)
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorado
+													option New Mexico
+													option North Dakota
+
+											p
+											label Disabled
+											select.form-control.selectpicker(title="ห้ามเลือก", disabled)
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorado
+													option New Mexico
+													option North Dakota
+
+											p
+											label Live search
+											select.form-control.selectpicker(title="กรุณาเลือก", data-live-search="true", multiple)
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorado
+													option New Mexico
+													option North Dakota
+
+											p
+											label Custom width
+											.row
+												.col-xs-3
+													.form-group
+														select.form-control.selectpicker(title="3/12")
+															option 1
+															option 2
+															option 3
+												.col-xs-9
+													.form-group
+														select.form-control.selectpicker(title="9/12")
+															option 1
+															option 2
+															option 3
+												.col-xs-5
+													.form-group
+														label 5/12
+														select.form-control.selectpicker(title="5/12")
+															option 1
+															option 2
+															option 3
+												.col-xs-3
+													.form-group
+														label 3/12
+														select.form-control.selectpicker(title="3/12")
+															option 1
+															option 2
+															option 3
+												.col-xs-4
+													.form-group
+														label 4/12
+														select.form-control.selectpicker(title="4/12")
+															option 1
+															option 2
+															option 3
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+											label With icon
+											select.form-control.selectpicker(title="Please Select", multiple)
+												option(data-icon="glyphicon-heart") California
+												option(data-icon="glyphicon-heart-empty") Nevada
+												option(data-icon="glyphicon-star") Oregon
+												option(data-icon="glyphicon-hand-right") Arizona
+												option(data-icon="glyphicon-music") Colorado
+												option(data-icon="glyphicon-credit-card") New Mexico
+												option(data-icon="glyphicon-info-sign") North Dakota
+
+											p
+											label With label
+											select.form-control.selectpicker(title="Please Select", multiple)
+												option(data-content="<span class='label label-default'>California</span>") California
+												option(data-content="<span class='label label-primary'>Nevada</span>") Nevada
+												option(data-content="<span class='label label-success'>Oregon</span>") Oregon
+												option(data-content="<span class='label label-info'>Arizona</span>") Arizona
+												option(data-content="<span class='label label-warning'>Colorado</span>") Colorado
+												option(data-content="<span class='label label-danger'>New Mexico</span>") New Mexico
+
+											p
+											label With color
+											select.form-control.selectpicker(title="Primary", data-style="btn-primary")
+												option 1
+												option 2
+												option 3
+											select.form-control.selectpicker(title="Success", data-style="btn-success")
+												option 1
+												option 2
+												option 3
+											select.form-control.selectpicker(title="Info", data-style="btn-info")
+												option 1
+												option 2
+												option 3
+											select.form-control.selectpicker(title="Warning", data-style="btn-warning")
+												option 1
+												option 2
+												option 3
+											select.form-control.selectpicker(title="Danger", data-style="btn-danger")
+												option 1
+												option 2
+												option 3
+												option 3
+
+											p
+											label Show menu arrow
+											select.form-control.selectpicker.show-menu-arrow(title="Please Select")
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorado
+													option New Mexico
+													option North Dakota
+
+											p
+											label Show checkmark
+											select.form-control.selectpicker.show-tick(title="Please Select")
+												optgroup(label="Pacific Time Zone")
+													option California
+													option Nevada
+													option Oregon
+												optgroup(label="Mountain Time Zone")
+													option Arizona
+													option Colorad
+													option New Mexico
+													option North Dakota
+
+											p
+											label Show subtext
+											select.form-control.selectpicker(title="Please Select")
+												optgroup(label="Pacific Time Zone")
+													option(data-subtext="this is the best choice") California
+													option(data-subtext="it's ok") Nevada
+													option(data-subtext="good") Oregon
+												optgroup(label="Mountain Time Zone")
+													option(data-subtext="ARZ") Arizona
+													option(data-subtext="COL") Colorado
+													option(data-subtext="NMEX") New Mexico
+													option(data-subtext="NDKT") North Dakota
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

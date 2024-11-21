@@ -1,0 +1,30 @@
+/* TAG
+---------------------------------------*/
+
+.bootstrap-tagsinput {
+	line-height: 1;
+	padding: 6px 6px 1px;
+	width: 100%;
+	.tag {
+		color: #FFF;
+		margin: 0 2px 5px 0;
+		&.label-info {
+			background-color: $theme-color;
+		}
+		&.label {
+			display: inline-block;
+			font-size: 100%;
+		}
+		> span {
+			background-color: darken($theme-color, 3%);
+			&:hover {
+				@include box-shadow(none !important);
+			}
+		}
+	}
+	input {
+		padding: 5px;
+	}
+}
+
+

@@ -1,0 +1,408 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Royalty 1";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Royalty
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-md-12
+									.panel.panel-default.panel-table
+										.panel-body
+
+											section.table-top
+												.row
+													.col-xs-12
+														.alert.alert-success._mb-0 <strong>Keyword</strong> โต๋ ศักดิ์สิทธิ์<br><strong>Period</strong> 01/2016 - 03/2016<br><strong>Indicators</strong> Youtube, Dtac, MV
+
+										.table-responsive
+											table.table.table-bordered.table-hover
+												thead
+													tr
+														th(width="50") No.
+														th Items
+														th(width="120") % Sharing
+														th(width="120") Net Rec.
+														th(width="120") P/L
+														th(width="120") Net Pay
+
+												tbody
+													tr
+														th(scope="row") 1
+														th ISRC 0001
+														th
+														th 200000
+														td: input.form-control.input-sm(value="50%")
+														td: input.form-control.input-sm(value="100000")
+													tr
+														th(scope="row")
+														td: span.subitem รักษ์พล รักขนาม
+														td 25%
+														td 25000
+														td
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ประภพ ชมถาวร
+														td 25%
+														td 25000
+														td
+														td
+													tr
+														th(scope="row")
+														td: span.subitem โต๋ ศักดิ์สิทธิ์
+														td 50%
+														td 50000
+														td
+														td
+													tr
+														th(scope="row")
+														td: h5._textright Total
+														td: h5 100%
+														td: h5 100000
+														td
+														td
+													tr
+														th(scope="row") 2
+														th ISRC 0002
+														th
+														th 100000
+														td: input.form-control.input-sm(value="60%")
+														td: input.form-control.input-sm(value="40000")
+													tr
+														th(scope="row")
+														td: span.subitem รักษ์พล รักขนาม
+														td 50%
+														td 20000
+														td
+														td
+													tr
+														th(scope="row")
+														td: span.subitem โต๋ ศักดิ์สิทธิ์
+														td 50%
+														td 20000
+														td
+														td
+													tr
+														th(scope="row")
+														td: h5._textright Total
+														td: h5 100%
+														td: h5 40000
+														td
+														td
+
+										.panel-footer.separator
+
+											// Table Bottom
+											section.table-bottom
+												.row
+
+													.col-xs-12
+
+														button.btn.btn-lg.btn-success._floatright Save
+
+
+
+							.row
+
+								.col-md-12
+									.panel.panel-default.panel-table
+										.panel-body
+
+											section.table-top
+												.row
+													.col-xs-12
+														.alert.alert-success._mb-0 <strong>Keyword</strong> โต๋ ศักดิ์สิทธิ์<br><strong>Period</strong> 01/2016 - 03/2016<br><strong>Indicators</strong> Youtube, Dtac, MV
+
+										.table-responsive
+											table.table.table-bordered.table-hover
+												thead
+													tr
+														th(width="50") No.
+														th Items
+														th(width="100") Qty.
+														th(width="100") Net Rec.
+														th(width="100")
+														th(width="50")
+														th(width="150") Remark
+
+												tbody
+													tr
+														th(scope="row") 1
+														td UPC 000A
+														td
+														td
+														td
+														td
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0001
+														td 100
+														td 10000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0002
+														td 100
+														td 10000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox", disabled)
+																label(for="checkbox1")
+														td: .label.label-warning % Sharing Incomplete
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0003
+														td 200
+														td 20000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0004
+														td 50
+														td 5000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row") 2
+														td ISRC 0011
+														td 400
+														td 40000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox", disabled)
+																label(for="checkbox1")
+														td: .label.label-warning % Transection Incomplete
+													tr
+														th(scope="row") 3
+														td ISRC 0012
+														td 20
+														td 2000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row") 4
+														td UPC 000B
+														td
+														td
+														td
+														td
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0005
+														td 100
+														td 10000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0006
+														td 100
+														td 10000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row")
+														td: span.subitem ISRC 0007
+														td 200
+														td 20000
+														td: button.btn.btn-primary.btn-xs Detail
+														td
+															.checkbox.checkbox-success
+																input#checkbox1.styled(type="checkbox")
+																label(for="checkbox1")
+														td
+													tr
+														th(scope="row")
+														td: h5._textright Total
+														td: h5 830
+														td: h5 540000
+														td
+														td
+														td
+
+										.panel-footer.separator
+
+											// Table Bottom
+											section.table-bottom
+												.row
+
+													.col-xs-12
+
+														button.btn.btn-lg.btn-success._floatright Calculate
+
+
+							.row
+
+								.col-md-8
+									.panel.panel-default
+										.panel-body
+
+											h5._mb-15 <span class="badge">1</span> Choose Keyword
+
+											.form-horizontal
+												.form-group
+													label.control-label.col-xs-2
+													.col-xs-10
+														.input-group
+															.radio.radio-inline.radio-primary
+																input#inlineradio1(type="radio", name="radio2", checked)
+																label(for="inlineradio1") UPC
+															.radio.radio-inline.radio-primary
+																input#inlineradio2(type="radio", name="radio2")
+																label(for="inlineradio2") ISRC
+															.radio.radio-inline.radio-primary
+																input#inlineradio3(type="radio", name="radio2")
+																label(for="inlineradio3") Artist
+															.radio.radio-inline.radio-primary
+																input#inlineradio4(type="radio", name="radio2")
+																label(for="inlineradio4") Person
+												.form-group
+													label.control-label.col-xs-2 Keyword
+													.col-xs-9
+														.input-group
+															input.form-control(type="text", placeholder="search")
+															span.input-group-btn
+																button.btn.btn-default(type="button"): i.fa.fa-search
+
+											hr
+
+											h5._mb-15 <span class="badge">2</span> Choose Period
+
+											.form-horizontal
+												.form-group
+													label.control-label.col-xs-2 Period
+													.col-xs-10
+														.input-grou
+
+															.row
+																.col-xs-5
+																	.form-group
+																		input#datetime-mirror.form-control.mask-datetime-noseconds(type="text")
+																		.datetime-picker-inline(type="text", data-date-format="dd/mm/yyyy hh:ii")
+
+																.col-xs-1
+																	p._textcenter(style="margin-top: 5px") to
+
+																.col-xs-5
+																	.form-group
+																		input#datetime-mirror.form-control.mask-datetime-noseconds(type="text")
+																		.datetime-picker-inline(type="text", data-date-format="dd/mm/yyyy hh:ii")
+
+								.col-md-4
+									.panel.panel-default
+										.panel-body
+
+											h5._mb-15 <span class="badge">3</span> Choose Indicators
+
+											form
+												.form-group
+													h6._mb-10 DSP
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox1.styled(type="checkbox")
+														label(for="inlinecheckbox1") Dtac
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox2.styled(type="checkbox")
+														label(for="inlinecheckbox2") Deezer
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox3.styled(type="checkbox", checked)
+														label(for="inlinecheckbox3") iTunes
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox4.styled(type="checkbox", checked)
+														label(for="inlinecheckbox4") True Move
+												.form-group
+													h6._mb-10 Service Type
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox1.styled(type="checkbox")
+														label(for="inlinecheckbox1") RBT
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox2.styled(type="checkbox")
+														label(for="inlinecheckbox2") Youtube
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox3.styled(type="checkbox")
+														label(for="inlinecheckbox3") MV
+												.form-group
+													h6._mb-10 Product Group
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox1.styled(type="checkbox")
+														label(for="inlinecheckbox1") Avex
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox2.styled(type="checkbox")
+														label(for="inlinecheckbox2") LOVEiS
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox3.styled(type="checkbox")
+														label(for="inlinecheckbox3") JYP
+												.form-group
+													h6._mb-10 Product Type
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox1.styled(type="checkbox")
+														label(for="inlinecheckbox1") CD
+													.checkbox.checkbox-inline.checkbox-primary
+														input#inlinecheckbox2.styled(type="checkbox")
+														label(for="inlinecheckbox2") Digital
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

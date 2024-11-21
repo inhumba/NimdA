@@ -1,0 +1,216 @@
+/* MISC.
+---------------------------------------*/
+
+.hint {
+	@include display-flex;
+	@include justify-content(center);
+	@include align-items(center);
+	margin-bottom: 20px;
+	text-align: center;
+	width: 100%;
+	&.hint-bg {
+		background-color: lighten($theme-color, 20%);
+		border: 1px solid lighten($theme-color, 10%);
+		padding: 20px 10px;
+		> * {
+			color: #FFF;
+		}
+	}
+	.jumbo {
+		color: lighten($dark, 40%);
+		font-family: $font-boon700;
+		font-size: 3em;
+		padding: 100px 0;
+	}
+	.text {
+		// color: lighten($dark, 40%);
+		font-family: $font-boon400;
+		font-size: 1.2em;
+	}
+}
+.jumbo {
+	color: lighten($dark, 20%);
+	font-family: $font-boon700;
+	font-size: 2em;
+	padding: 10px 0 30px;
+}
+
+// .block-center {
+// 	margin-left: auto !important;
+// 	margin-right: auto !important;
+// }
+._textleft {
+	text-align: left !important;
+}
+._textright {
+	text-align: right !important;
+}
+._textcenter {
+	text-align: center !important;
+}
+._floatleft {
+	float: left !important;
+}
+._floatright {
+	float: right !important;
+}
+._floatnone {
+	float: none !important;
+}
+// ._fullwidth {
+// 	width: 100% !important;
+// }
+._fullheight {
+	height: 100% !important;
+}
+// ._padding0 {
+// 	padding: 0 !important;
+// }
+
+// .line-square {
+// 	@include replace-text-with-dimensions("icon_line@2x.png", center, center);
+// 	@include background-size(30px 30px);
+// 	display: inline;
+// 	height: 30px;
+// 	width: 30px;
+// 	padding-left: 30px;
+// }
+
+.clear {
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+}
+%cf {
+	*zoom: 1;
+	&:after {
+		clear: both;
+		content: " ";
+		display: table;
+	}
+	&:before {
+		content: " ";
+		display: table;
+	}
+}
+
+@each $marginbottom in 0, 5, 10, 15, 20 {
+	._mb-#{$marginbottom} {
+		margin-bottom: #{$marginbottom}px;
+	}
+}
+@each $marginleft in 0, 5, 10, 15, 20 {
+	._ml-#{$marginleft} {
+		margin-left: #{$marginleft}px;
+	}
+}
+@each $marginright in 0, 5, 10, 15, 20 {
+	._mr-#{$marginright} {
+		margin-right: #{$marginright}px;
+	}
+}
+
+.container-vertical-middle {
+	border-collapse: collapse;
+	display: table;
+	padding-right: 0;
+	padding-left: 0;
+	width: 100%;
+	table-layout: fixed;
+	> .row-vertical-middle {
+		display: table-row;
+		> .cell-vertical-middle {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	}
+}
+
+// %circle {
+// 	@include border-radius(100%);
+// }
+
+// .iframe-responsive-43 {
+// 	position: relative;
+// 	padding-bottom: (3/4) * 100%;
+// 	padding-top: 35px;
+// 	height: 0;
+// 	overflow: hidden;
+// 	iframe {
+// 		position: absolute;
+// 		top:0;
+// 		left: 0;
+// 		width: 100%!important;
+// 		height: 100%!important;
+// 	}
+// }
+// .iframe-responsive-169 {
+// 	position: relative;
+// 	padding-bottom: (9/16) * 100%;
+// 	padding-top: 35px;
+// 	height: 0;
+// 	overflow: hidden;
+// 	iframe {
+// 		position: absolute;
+// 		top:0;
+// 		left: 0;
+// 		width: 100%!important;
+// 		height: 100%!important;
+// 	}
+// }
+
+.no-gutter > [class*='col-'] {
+	padding-right:0;
+	padding-left:0;
+}
+
+.col-xs-2_5,
+.col-sm-2_5,
+.col-md-2_5,
+.col-lg-2_5 {
+	position: relative;
+	min-height: 1px;
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.col-xs-2_5 {
+	width: 20%;
+	float: left;
+}
+// @media (min-width: 768px) {
+// 	.col-sm-15 {
+// 		width: 20%;
+// 		float: left;
+// 	}
+// }
+// @media (min-width: 1024px) {
+// 	.col-md-15 {
+// 		width: 20%;
+// 		float: left;
+// 	}
+// }
+// @media (min-width: 1200px) {
+// 	.col-lg-15 {
+// 		width: 20%;
+// 		float: left;
+// 	}
+// }
+
+// Webkit
+// @media screen and (-webkit-min-device-pixel-ratio:0) {
+
+// 	.reservation-form {
+// 		label {
+// 			width: 100%;
+// 		}
+// 		select {
+// 			height: 28px;
+// 			width: 100%;
+// 			@include box-shadow(none);
+// 		}
+// 	}
+
+// }

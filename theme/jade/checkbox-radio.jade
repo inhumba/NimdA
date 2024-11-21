@@ -1,0 +1,143 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Checkbox & Radio";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Checkbox & Radio
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Checkboxes
+										.panel-body
+											.checkbox
+												input#checkbox1.styled(type="checkbox")
+												label(for="checkbox1") ภาษาไทย
+											.checkbox
+												input#checkbox2.styled(type="checkbox", checked)
+												label(for="checkbox2") Default
+											.checkbox.checkbox-primary
+												input#checkbox3.styled(type="checkbox", checked)
+												label(for="checkbox3") Primary
+											.checkbox.checkbox-success
+												input#checkbox4.styled(type="checkbox", checked)
+												label(for="checkbox4") Success
+											.checkbox.checkbox-info
+												input#checkbox5.styled(type="checkbox", checked)
+												label(for="checkbox5") Info
+											.checkbox.checkbox-warning
+												input#checkbox6.styled(type="checkbox", checked)
+												label(for="checkbox6") Warning
+											.checkbox.checkbox-danger
+												input#checkbox7.styled(type="checkbox", checked)
+												label(for="checkbox7") Danger
+
+											<br>
+											h5._mb-10 Inline checkboxes
+											.checkbox.checkbox-inline
+												input#inlinecheckbox1.styled(type="checkbox")
+												label(for="inlinecheckbox1") ภาษาไทย
+											.checkbox.checkbox-inline.checkbox-primary
+												input#inlinecheckbox2.styled(type="checkbox")
+												label(for="inlinecheckbox2") Primary
+											.checkbox.checkbox-inline.checkbox-success
+												input#inlinecheckbox3.styled(type="checkbox", checked)
+												label(for="inlinecheckbox3") Success
+
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Radios
+										.panel-body
+											.radio
+												input#radio1(type="radio", name="radio1", checked)
+												label(for="radio1") ภาษาไทย
+											.radio
+												input#radio2(type="radio", name="radio1")
+												label(for="radio2") Default
+											.radio.radio-primary
+												input#radio3(type="radio", name="radio1")
+												label(for="radio3") Primary
+											.radio.radio-success
+												input#radio4(type="radio", name="radio1")
+												label(for="radio4") Success
+											.radio.radio-info
+												input#radio5(type="radio", name="radio1")
+												label(for="radio5") Info
+											.radio.radio-warning
+												input#radio6(type="radio", name="radio1")
+												label(for="radio6") Warning
+											.radio.radio-danger
+												input#radio7(type="radio", name="radio1")
+												label(for="radio7") Danger
+
+											<br>
+											h5._mb-10 Inline radios
+											.radio.radio-inline
+												input#inlineradio1(type="radio", name="radio2")
+												label(for="inlineradio1") ภาษาไทย
+											.radio.radio-inline.radio-info
+												input#inlineradio2(type="radio", name="radio2", checked)
+												label(for="inlineradio2") Info
+											.radio.radio-inline.radio-warning
+												input#inlineradio3(type="radio", name="radio2")
+												label(for="inlineradio3") Warning
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Disabled Stage
+										.panel-body
+											.checkbox
+												input#disabledcheckbox1.styled(type="checkbox", disabled)
+												label(for="disabledcheckbox1") กดไม่ได้
+											.checkbox.checkbox-primary
+												input#disabledcheckbox2.styled(type="checkbox", checked, disabled)
+												label(for="disabledcheckbox2") บังคับกด
+											.radio.radio-info
+												input#disabledradio1(type="radio", name="radio3", disabled)
+												label(for="disabledradio1") เลือกไม่ได้นะ
+											.radio.radio-warning
+												input#disabledradio2(type="radio", name="radio3", checked, disabled)
+												label(for="disabledradio2") เลือกให้แล้ว
+											.radio.radio-danger
+												input#disabledradio3(type="radio", name="radio3", disabled)
+												label(for="disabledradio3") Don't choose
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

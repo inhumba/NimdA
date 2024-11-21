@@ -1,0 +1,76 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Tooltip";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Tooltip
+
+				section.content
+
+					section.section
+
+						.container-fluid
+							.row
+
+								.col-md-6
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Tooltip
+										.panel-body
+											._textcenter
+												p
+												button.btn.btn-default(title="Left", data-toggle="tooltip", data-placement="left") Left
+												button.btn.btn-default(title="Top", data-toggle="tooltip", data-placement="top") Top
+												button.btn.btn-default(title="Bottom", data-toggle="tooltip", data-placement="bottom") Bottom
+												button.btn.btn-default(title="Right", data-toggle="tooltip", data-placement="right") Right
+												<hr>
+												span._mr-10(title="Tooltip on text", data-toggle="tooltip", data-placement="top") Sometext
+												span._ml-10._mr-10(title="Tooltip on icon", data-toggle="tooltip", data-placement="bottom") <i class="fa fa-exclamation-triangle"></i>
+												a._ml-10(href="", title="Tooltip on link", data-toggle="tooltip", data-placement="top") Somelink
+										.panel-footer
+
+								.col-md-6
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Popover
+										.panel-body
+											._textcenter
+												p
+												button.btn.btn-default._mb-5(data-container="body", data-toggle="popover", data-placement="top", data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, in.", title="Popover on Top") Top
+												<br>
+												button.btn.btn-default._mb-5(data-container="body", data-toggle="popover", data-placement="left", data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, in.", title="Popover on Left") Left
+												<br>
+												button.btn.btn-default._mb-5(data-container="body", data-toggle="popover", data-placement="right", data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, in.", title="Popover on Right") Right
+												<br>
+												button.btn.btn-default(data-container="body", data-toggle="popover", data-placement="bottom", data-content="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis, in.") Bottom no Title
+
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

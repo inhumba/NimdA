@@ -1,0 +1,25 @@
+/* DATETIME PICKER
+---------------------------------------*/
+
+.datetimepicker.datetimepicker-inline {
+	margin: 10px auto;
+}
+.datetimepicker-inline, .datetimepicker table {
+	margin-right: auto;
+	margin-left: auto;
+	width: 270px;
+}
+.datetimepicker td, .datetimepicker th {
+	padding: 5px 10px !important;
+}
+.datetimepicker tfoot th {
+	background-color: lighten($theme, 20%);
+	&:hover {
+		background-color: $theme;
+		color: #FFF;
+	}
+}
+.datetimepicker table tr td.active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active.active:hover, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled.active:hover, .datetimepicker table tr td span.active:active, .datetimepicker table tr td span.active:hover:active, .datetimepicker table tr td span.active.disabled:active, .datetimepicker table tr td span.active.disabled:hover:active, .datetimepicker table tr td span.active.active, .datetimepicker table tr td span.active.active:hover, .datetimepicker table tr td span.active.disabled.active, .datetimepicker table tr td span.active.disabled.active:hover {
+	background-color: $theme;
+	background-image: none;
+}

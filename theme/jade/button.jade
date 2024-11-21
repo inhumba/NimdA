@@ -1,0 +1,304 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Buttons";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Buttons
+
+					// Topbar Button Left
+					.topbar-button._floatleft
+						button.btn.btn-default.notific ภาษาไทย
+						button.btn.btn-default Default
+						button.btn.btn-primary Primary
+						button.btn.btn-success Success
+
+					// Topbar Button Right
+					.topbar-button._floatright
+						a.btn.btn-link.screen-loading Link
+						button.btn.btn-info.screen-loading Info
+						button.btn.btn-warning.screen-loading Warning
+						button.btn.btn-danger.screen-loading Danger
+
+				section.content
+
+					section.section.section-dark
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									h1.jumbo._textcenter Section
+
+									h4.title Align Left
+									button.btn.btn-default ภาษาไทย
+									button.btn.btn-default Default
+									button.btn.btn-primary Primary
+									button.btn.btn-success Success
+									button.btn.btn-info Info
+									button.btn.btn-warning Warning
+									button.btn.btn-danger Danger
+									a.btn.btn-link Link
+
+									p
+									h4.title._textcenter Align Center
+									._textcenter
+										button.btn.btn-default ภาษาไทย
+										button.btn.btn-default Default
+										button.btn.btn-primary Primary
+										button.btn.btn-success Success
+										button.btn.btn-info Info
+										button.btn.btn-warning Warning
+										button.btn.btn-danger Danger
+										a.btn.btn-link Link
+
+									p
+									h4.title._textright Align Right
+									._textright
+										button.btn.btn-default ภาษาไทย
+										button.btn.btn-default Default
+										button.btn.btn-primary Primary
+										button.btn.btn-success Success
+										button.btn.btn-info Info
+										button.btn.btn-warning Warning
+										button.btn.btn-danger Danger
+										a.btn.btn-link Link
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									h1.jumbo._textcenter Panel
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading.separator.has-button
+											h2.panel-title Panel title
+											.panel-heading-button
+												button.btn.btn-default.btn-sm Default
+												button.btn.btn-primary.btn-sm Primary
+												a.btn.btn-link.btn-sm Link
+										.panel-body
+											h3 Button in Panel title
+											p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nobis quisquam iusto hic maiores quos impedit vel. Id maiores, dicta.
+										.panel-footer.separator Panel footer
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Panel title
+										.panel-body
+											h3 Button in Panel body
+											p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nobis quisquam iusto hic maiores quos impedit vel. Id maiores, dicta.
+											._textcenter
+												button.btn.btn-default ภาษาไทย
+												button.btn.btn-success Success
+												button.btn.btn-info Info
+												a.btn.btn-link Link
+										.panel-footer.separator Panel footer
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Panel title
+										.panel-body
+											h3 Button in Panel footer
+											p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos nobis quisquam iusto hic maiores quos impedit vel. Id maiores, dicta
+										.panel-footer.separator
+											._textright
+												button.btn.btn-warning.btn-lg Warning
+												button.btn.btn-danger.btn-lg Danger
+												a.btn.btn-link.btn-lg Link
+
+					section.section.section-light
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									h1.jumbo._textcenter Sizes
+
+								.col-xs-3
+									.panel.panel-default
+										.panel-heading._textcenter
+											h2.panel-title ขนาด
+										.panel-body
+											p
+												button.btn.btn-primary.btn-lg Large button
+												button.btn.btn-default.btn-lg ปุ่มใหญ่
+											p
+												button.btn.btn-primary Default button
+												button.btn.btn-default ปุ่มปกติ
+											p
+												button.btn.btn-primary.btn-sm Small button
+												button.btn.btn-default.btn-sm ปุ่มเล็ก
+											p
+												button.btn.btn-primary.btn-xs Extra small button
+												button.btn.btn-default.btn-xs ปุ่มเล็กสุด ๆ
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading._textcenter
+											h2.panel-title กว้างเต็ม 100%
+										.panel-body
+											button.btn.btn-default.btn-block ภาษาไทย
+											button.btn.btn-default.btn-block Default
+											button.btn.btn-primary.btn-block Primary
+											button.btn.btn-success.btn-block Success
+											button.btn.btn-info.btn-block Info
+											button.btn.btn-warning.btn-block Warning
+											button.btn.btn-danger.btn-block Danger
+											a.btn.btn-link.btn-block Link
+
+								.col-xs-5
+									.panel.panel-default
+										.panel-heading._textcenter
+											h2.panel-title กว้างตาม grid
+										.panel-body
+											.row
+												.col-xs-6
+													button.btn.btn-default.btn-block 50%
+												.col-xs-6
+													button.btn.btn-primary.btn-block 50%
+												.col-xs-5
+													button.btn.btn-success.btn-block 42%
+												.col-xs-4
+													button.btn.btn-info.btn-block 33%
+												.col-xs-3
+													button.btn.btn-warning.btn-block 25%
+												.col-xs-2
+												.col-xs-8
+													button.btn.btn-danger.btn-block 66%
+												.col-xs-2
+													a.btn.btn-link.btn-block 16%
+
+								<hr>
+
+								.col-xs-12
+
+									h1.jumbo._textcenter Dropdowns
+									._textcenter
+										.btn-group
+											button.btn.btn-default.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Default <span class="caret"></span>
+											ul.dropdown-menu
+												li: a(href="") Action
+												li: a(href="") Another action
+												li: a(href="") Something else here
+												li.divider
+												li: a(href="") Separated link
+										.btn-group
+											button.btn.btn-primary Primary
+											button.btn.btn-primary.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false")
+												span.caret
+												span.sr-only Toggle Dropdown
+											ul.dropdown-menu
+												li: a(href="") Action
+												li: a(href="") Another action
+												li: a(href="") Something else here
+												li.divider
+												li: a(href="") Separated link
+										.btn-group
+											button.btn.btn-success.btn-lg.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Success <span class="caret"></span>
+											ul.dropdown-menu
+												li: a(href="") Action
+												li: a(href="") Another action
+												li: a(href="") Something else here
+												li.divider
+												li: a(href="") Separated link
+										.btn-group
+											button.btn.btn-info.btn-sm.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Info <span class="caret"></span>
+											ul.dropdown-menu
+												li: a(href="") Action
+												li: a(href="") Another action
+												li: a(href="") Something else here
+												li.divider
+												li: a(href="") Separated link
+										.btn-group
+											button.btn.btn-warning.btn-xs.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Warning <span class="caret"></span>
+											ul.dropdown-menu
+												li: a(href="") Action
+												li: a(href="") Another action
+												li: a(href="") Something else here
+												li.divider
+												li: a(href="") Separated link
+										.btn-group.dropup
+											button.btn.btn-danger.dropdown-toggle(type="button", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Danger <span class="caret"></span>
+											ul.dropdown-menu
+												li: a(href="") Action
+												li: a(href="") Another action
+												li: a(href="") Something else here
+												li.divider
+												li: a(href="") Separated link
+
+
+								<hr>
+
+								.col-xs-12
+
+									h1.jumbo._textcenter Icons
+									._textcenter
+										button.btn.btn-default
+											span.glyphicon.glyphicon-align-left
+										button.btn.btn-default
+											span.fa.fa-align-left
+										button.btn.btn-default
+											<span class="glyphicon glyphicon-star"></span> Default
+										button.btn.btn-primary
+											<span class="fa fa-star"></span> Primary
+										button.btn.btn-success Success <span class="glyphicon glyphicon-chevron-right"></span>
+										button.btn.btn-info Info <span class="fa fa-chevron-right"></span>
+										button.btn.btn-warning.btn-lg
+											<span class="glyphicon glyphicon-zoom-in"></span> Warning
+										button.btn.btn-danger.btn-sm
+											<span class="glyphicon glyphicon-zoom-out"></span> Danger
+										a.btn.btn-link
+											<span class="fa fa-hand-peace-o"></span> Link
+
+								<hr>
+
+								.col-xs-12
+
+									h1.jumbo._textcenter Disabled Stage
+									._textcenter
+										button.btn.btn-default(disabled="disabled") ภาษาไทย
+										button.btn.btn-default(disabled="disabled") Default
+										button.btn.btn-primary(disabled="disabled") Primary
+										button.btn.btn-success(disabled="disabled") Success
+										button.btn.btn-info(disabled="disabled") Info
+										button.btn.btn-warning(disabled="disabled") Warning
+										button.btn.btn-danger(disabled="disabled") Danger
+										a.btn.btn-link(disabled="disabled") Link
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

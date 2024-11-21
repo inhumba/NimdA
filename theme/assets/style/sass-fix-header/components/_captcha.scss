@@ -1,0 +1,92 @@
+/* CAPTCHA
+---------------------------------------*/
+
+$bg-color: #626262;
+.captcha-wrapper {
+	background-color: #FAFAFA;
+	border: 1px solid #DDD;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	padding: 10px 15px 15px;
+	@include border-radius(4px);
+	> label {
+		color: $bg-color;
+		display: block;
+		margin-bottom: 20px;
+		text-align: center;
+	}
+}
+.captcha {
+	display: table;
+	width: 100%;
+	> .cap-q, > .cap-a {
+		display: table-cell;
+	}
+	> .cap-q {
+		text-align: center;
+		width: 140px;
+		> .label-custom {
+			background-color: $bg-color;
+			color: #FFF;
+			display: block;
+			font-family: $font-boon600;
+			font-size: 1.2em;
+			padding: 4px 6px 3px;
+			@include border-radius(3px);
+		}
+	}
+	> .cap-a {
+		padding: 0 10px 0 30px;
+	}
+}
+#captcha-range-value {
+	display: inline;
+}
+
+.noUi-target {
+	border: none;
+	@include box-shadow(none);
+	@include border-radius(0);
+}
+.noUi-horizontal {
+	height: 5px;
+	.noUi-handle {
+		background: #FFF;
+		border: 1px solid #BBB;
+		height: 18px;
+		width: 18px;
+		top: -7px;
+		left: -9px;
+		@include transition(all 0.2s ease);
+		@include border-radius(100%);
+		@include box-shadow(none);
+		&::before, &::after {
+			display: none;
+		}
+	}
+}
+.noUi-background {
+	background-color: $bg-color;
+}
+.noUi-base {
+	padding: 5px 0;
+}
+.noUi-origin {
+	background-color: #DDD;
+	bottom: 5px;
+	@include border-radius(0);
+}
+.noUi-tooltip {
+	background-color: $bg-color;
+	border: none;
+	color: #FFF;
+	font-size: 0.9em;
+	padding: 1px 8px;
+	top: -27px !important;
+	left: -4px;
+	text-align: center;
+	@include border-radius(3px);
+}
+
+
+

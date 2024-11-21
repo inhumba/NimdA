@@ -1,0 +1,72 @@
+/*
+Theme Name: NimdA
+Author: Donjai Media Plus
+Author URI: http://donjaimediaplus.com/nimda/
+Version: 5.1
+*/
+
+//== Reset
+@import "reset/reset";
+
+//== Vendors
+@import "compass";
+// @import "compass/typography";
+// @import "compass/utilities";
+
+//== Variables & Mixins
+@import "variables/variables";
+@import "mixins/mixins";
+
+//== Typo & Fonts
+@import url(#{$fontpath}/font-awesome/css/font-awesome.min.css);
+@import "typo/fonts";
+@import "typo/typo";
+// @import "typo/editor";
+
+//== Style
+@import "style/main";
+
+//== Components
+@import "components/pace";
+// @import "components/slidebars";
+// @import "components/navbartoggle";
+// @import "components/royalslider";
+// @import "components/owlcarousel";
+// @import "components/sliderpro";
+// @import "components/mmenu";
+// @import "components/multidropdown";
+@import "components/dropdown";
+@import "components/form";
+@import "components/label";
+@import "components/table";
+@import "components/inputfile";
+@import "components/panel";
+@import "components/accordion";
+// @import "components/datepicker";
+// @import "components/select2";
+// @import "components/selectric";
+@import "components/selectpicker";
+@import "components/datetimepicker";
+// @import "components/icheck";
+@import "components/switchery";
+@import "components/modal";
+@import "components/tab";
+@import "components/tag";
+// @import "components/easytabs";
+@import "components/breadcrumb";
+@import "components/anchor";
+// @import "components/multistep";
+@import "components/pagination";
+// @import "components/popover";
+// @import "components/totop";
+@import "components/dragndrop";
+@import "components/noty";
+@import "components/summernote";
+
+//== Misc.
+// @import "misc/browser";
+@import "misc/misc";
+
+//== Media query
+// @import "mq/desktopfirst";
+

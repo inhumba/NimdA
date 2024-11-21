@@ -1,0 +1,64 @@
+/* NOTY
+---------------------------------------*/
+
+#noty_bottomRight_layout_container,
+#noty_topRight_layout_container {
+	li {
+		background: none !important;
+		border: none !important;
+		height: auto !important;
+		margin: 5px 0 !important;
+		@include border-radius(4px !important);
+	}
+}
+
+.noty_bar {
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	@include border-radius(4px);
+	.noty_message {
+		@include font-size(15 !important);
+		padding: 15px !important;
+		text-align: center !important;
+	}
+	.noty_text {
+		font-family: $font-boon600;
+		font-size: 1.2em;
+	}
+}
+.noty_type_success {
+	background-color: #dff0d8;
+	border-color: darken(#dff0d8, 15%);
+	color: #3c763d;
+}
+.noty_type_information {
+	background-color: #d9edf7;
+	border-color: darken(#d9edf7, 15%);
+	color: #31708f;
+}
+.noty_type_warning {
+	background-color: #fcf8e3;
+	border-color: darken(#fcf8e3, 15%);
+	color: #8a6d3b;
+}
+.noty_type_error {
+	background-color: #f2dede;
+	border-color: darken(#f2dede, 15%);
+	color: #a94442;
+}
+.noty_type_confirm {
+	> .noty_message {
+		@include border-radius(4px 4px 0 0);
+	}
+	> .noty_buttons {
+		padding: 10px !important;
+		text-align: center !important;
+		@include border-radius(0 0 4px 4px);
+	}
+}
+
+/* ANIMATE */
+.animated {
+	@include animation-duration(.6s);
+}
+

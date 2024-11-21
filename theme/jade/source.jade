@@ -1,0 +1,100 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Source";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Source
+
+				section.content
+
+					section.section
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									.panel.panel-default.panel-transparent
+										.panel-body
+											h3.title Fonts
+											ul
+												li Boon Font 2.0 <i class="fa fa-long-arrow-right"></i>
+													a(href="http://sungsit.com/boon/") http://sungsit.com/boon/
+												li Font Awesome 4.7.0 <i class="fa fa-long-arrow-right"></i>
+													a(href="http://fontawesome.io/") http://fontawesome.io/
+
+											h3.title Scripts
+											ul
+												li jQuery 1.12.3 <i class="fa fa-long-arrow-right"></i>
+													a(href="http://jquery.org/") http://jquery.org/
+												li Modernizr 2.8.3 <i class="fa fa-long-arrow-right"></i>
+													a(href="http://modernizr.com/") http://modernizr.com/
+
+											h3.title Plugins
+											ul
+												li Animate.css 3.5.1 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/daneden/animate.css") https://github.com/daneden/animate.css
+
+												li Bootstrap 3.3.5 <i class="fa fa-long-arrow-right"></i>
+													a(href="http://getbootstrap.com/") http://getbootstrap.com/
+													ul
+														li Awesome Bootstrap Checkbox v1.0.0-alpha.2 <i class="fa fa-long-arrow-right"></i>
+															a(href="https://github.com/flatlogic/awesome-bootstrap-checkbox") https://github.com/flatlogic/awesome-bootstrap-checkbox
+														li Bootstrap Datetimepicker <i class="fa fa-long-arrow-right"></i>
+															a(href="https://github.com/smalot/bootstrap-datetimepicker") https://github.com/smalot/bootstrap-datetimepicker
+														li Bootstrap FileStyle 1.2.1 <i class="fa fa-long-arrow-right"></i>
+															a(href="http://markusslima.github.io/bootstrap-filestyle/") http://markusslima.github.io/bootstrap-filestyle/
+														li Bootstrap Select 1.10.0 <i class="fa fa-long-arrow-right"></i>
+															a(href="http://silviomoreto.github.io/bootstrap-select/") http://silviomoreto.github.io/bootstrap-select/
+														li Bootstrap Tags Input 0.8.0 <i class="fa fa-long-arrow-right"></i>
+															a(href="https://github.com/bootstrap-tagsinput/bootstrap-tagsinput") https://github.com/bootstrap-tagsinput/bootstrap-tagsinput
+
+												li CKEditor 4.6.2 <i class="fa fa-long-arrow-right"></i>
+													a(href="http://ckeditor.com/") http://ckeditor.com/
+												li CKEditor 3.4.1 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://cksource.com/ckfinder") https://cksource.com/ckfinder
+												li Jquery.inputmask 3.3.2-1 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/RobinHerbots/jquery.inputmask") https://github.com/RobinHerbots/jquery.inputmask
+												li Magnific Popup 1.1.0 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/dimsemenov/Magnific-Popup") https://github.com/dimsemenov/Magnific-Popup
+												li Nestable <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/dbushell/Nestable") https://github.com/dbushell/Nestable
+												li noty 2.3.8 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/needim/noty") https://github.com/needim/noty
+												li noUiSlider 8.5.1 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/leongersen/noUiSlider/") https://github.com/leongersen/noUiSlider/
+												li PACE 1.0.0 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/HubSpot/pace") https://github.com/HubSpot/pace
+												li Switchery 0.8.1 <i class="fa fa-long-arrow-right"></i>
+													a(href="https://github.com/abpetkov/switchery") https://github.com/abpetkov/switchery
+
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

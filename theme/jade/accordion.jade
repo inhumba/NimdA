@@ -1,0 +1,113 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Accordions";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Accordions
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-md-6
+
+									.panel.panel-default.panel-transparent
+										.panel-heading
+											h3.panel-title Individual Collapse
+										.panel-body
+
+											#accordion-1.accordion.panel-group(aria-multiselectable="true")
+
+												.panel.panel-default
+													.panel-heading
+														h3.panel-title
+															a.arrow(data-toggle="collapse", data-parent="", href="#accordion-1-1", aria-expanded="true") Lorem ipsum dolor sit amet.
+													#accordion-1-1.panel-collapse.collapse.in
+														.panel-body.editor
+															p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi impedit, quaerat ad debitis eum consequatur ipsa voluptate dolorem placeat non.
+
+												.panel.panel-default
+													.panel-heading
+														h3.panel-title
+															a.collapsed.arrow(data-toggle="collapse", data-parent="", href="#accordion-1-2", aria-expanded="false") สกายผลักดันแครอทซานตาคลอสซังเต บุญคุณป๊อกดัมพ์วานิลลาบ็อกซ์
+													#accordion-1-2.panel-collapse.collapse
+														.panel-body.editor
+															p แดรี่ โทรเมจิกพุทโธโอยัวะลอร์ด โปรโมชั่นเฟรชละติน เฟิร์มวอลซ์ แตงกวามุมมองแคชเชียร์เก๊ะ กราวนด์ศากยบุตรเอสเพรสโซไฟแนนซ์ พาร์ทเนอร์ป๊อกไวอะกร้าเพลซเป่ายิงฉุบ นอมินี พันธกิจรูบิค พาวเวอร์ นายแบบ เทียมทานโฟมรัมยอมรับนางแบบ สัมนาวอลนัทแจ๊กพ็อต
+
+												.panel.panel-default
+													.panel-heading
+														h3.panel-title
+															a.collapsed.arrow(data-toggle="collapse", data-parent="", href="#accordion-1-3", aria-expanded="false") Consectetur adipisicing elit sequi impedit
+													#accordion-1-3.panel-collapse.collapse
+														.panel-body.editor
+															p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem tenetur hic fugit exercitationem facere magni sint, facilis officia ipsam dicta a ut earum iusto natus consequuntur provident consequatur dignissimos obcaecati?
+															p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quis.
+
+								.col-md-6
+
+									.panel.panel-default
+										.panel-heading.separator
+											h3.panel-title Group Collapse
+										.panel-body
+
+											#accordion-2.accordion.panel-group(aria-multiselectable="true")
+
+												.panel.panel-default
+													.panel-heading
+														h3.panel-title
+															a(data-toggle="collapse", data-parent="#accordion-2", href="#accordion-2-1", aria-expanded="true") Lorem ipsum dolor sit amet.
+													#accordion-2-1.panel-collapse.collapse.in
+														.panel-body.editor
+															p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi impedit, quaerat ad debitis eum consequatur ipsa voluptate dolorem placeat non.
+
+												.panel.panel-default
+													.panel-heading
+														h3.panel-title
+															a.collapsed(data-toggle="collapse", data-parent="#accordion-2", href="#accordion-2-2", aria-expanded="false") สกายผลักดันแครอทซานตาคลอสซังเต บุญคุณป๊อกดัมพ์วานิลลาบ็อกซ์
+													#accordion-2-2.panel-collapse.collapse
+														.panel-body.editor
+															p แดรี่ โทรเมจิกพุทโธโอยัวะลอร์ด โปรโมชั่นเฟรชละติน เฟิร์มวอลซ์ แตงกวามุมมองแคชเชียร์เก๊ะ กราวนด์ศากยบุตรเอสเพรสโซไฟแนนซ์ พาร์ทเนอร์ป๊อกไวอะกร้าเพลซเป่ายิงฉุบ นอมินี พันธกิจรูบิค พาวเวอร์ นายแบบ เทียมทานโฟมรัมยอมรับนางแบบ สัมนาวอลนัทแจ๊กพ็อต
+
+												.panel.panel-default
+													.panel-heading
+														h3.panel-title
+															a.collapsed(data-toggle="collapse", data-parent="#accordion-2", href="#accordion-2-3", aria-expanded="false") Consectetur adipisicing elit sequi impedit
+													#accordion-2-3.panel-collapse.collapse
+														.panel-body.editor
+															p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem tenetur hic fugit exercitationem facere magni sint, facilis officia ipsam dicta a ut earum iusto natus consequuntur provident consequatur dignissimos obcaecati?
+															p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quis.
+
+
+
+						//- Footer include
+						include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

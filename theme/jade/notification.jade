@@ -1,0 +1,53 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Notification";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Notification
+
+				section.content
+
+					section.section.section-dark
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									._textcenter
+										button.btn.btn-default.noti.noti-alert Alert
+										button.btn.btn-success.noti.noti-success Success
+										button.btn.btn-info.noti.noti-information Info
+										button.btn.btn-warning.noti.noti-warning Warning
+										button.btn.btn-danger.noti.noti-error Error
+										button.btn.btn-primary.noti.noti-confirm Confirm
+
+								//- Footer include
+								//- include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

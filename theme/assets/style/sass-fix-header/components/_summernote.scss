@@ -1,0 +1,25 @@
+/* SUMMERNOTE
+---------------------------------------*/
+
+.note-editor {
+	&.note-frame {
+		border: 1px solid #ccc;
+	}
+	.note-toolbar.panel-heading {
+		background-color: #f9f9f9;
+		border-color: #ccc;
+		padding: 0 0 5px 5px;
+	}
+	.modal {
+		.close {
+			font-size: 29px;
+		}
+		.modal-body {
+			margin: 0 15px;
+			.form-group {
+				margin-right: 0;
+				margin-left: 0;
+			}
+		}
+	}
+}

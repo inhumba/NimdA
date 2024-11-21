@@ -1,0 +1,66 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Tags";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Tags
+
+				section.content
+
+					section.section
+
+						.container-fluid
+							.row
+
+								.col-xs-6
+
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Tags with input
+										.panel-body
+
+											input(type="text", value="Amsterdam,Beijing,กรุงเทพ,นครปฐม,A", data-role="tagsinput")
+
+								.col-xs-6
+
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Tags with select
+										.panel-body
+
+											select(data-role="tagsinput", multiple)
+												option(value="Amsterdam") Amsterdam
+												option(value="Beijing") Beijing
+												option(value="กรุงเทพ") กรุงเทพ
+												option(value="นครปฐม") นครปฐม
+												option(value="A") A
+
+						//- Footer include
+						include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

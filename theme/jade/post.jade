@@ -1,0 +1,260 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Posts";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Posts
+
+					// Topbar Button Right
+					.topbar-button._floatright
+						button.btn.btn-default
+							<span class="fa fa-plus"></span> Add New
+						button.btn.btn-primary.screen-loading
+							<span class="fa fa-save"></span> Save
+
+				section.content
+
+					// Section
+					section.section.section-dark
+
+						.container-fluid
+							.row
+
+								// Left side
+								.col-xs-8
+
+									// Content
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title_bigtext New Post
+										.panel-body
+
+											// Tab Type
+											.the-tabs.the-tabs-super
+
+												// Tab Menu
+												ul.nav.nav-tabs
+													li.pull-right: a(href="#content-tab-en", data-toggle="tab") EN
+													li.active.pull-right: a(href="#content-tab-th", data-toggle="tab") TH
+
+												// Tab Area
+												.tab-content
+
+													// Content Tab EN
+													#content-tab-en.tab-pane
+														.panel.panel-default
+															.panel-body
+																form
+																	.form-group
+																		label Title
+																		input.form-control
+																	.form-group
+																		label Permalink : <small><a href="">http://www.abc.com/permalink/</a></small>
+																		input.form-control
+																	.form-group
+																		textarea.editor.form-control(rows="50")
+																	.form-group
+																		label Excerpt
+																		textarea.form-control(rows="3")
+
+													// Content Tab TH
+													#content-tab-th.tab-pane.active
+														.panel.panel-default
+															.panel-body
+																form
+																	.form-group
+																		label Title
+																		input.form-control
+																	.form-group
+																		label Permalink : <small><a href="">http://www.abc.com/permalink/</a></small>
+																		input.form-control
+																	.form-group
+																		textarea.editor.form-control(rows="50")
+																	.form-group
+																		label Excerpt
+																		textarea.form-control(rows="3")
+
+									//SEO
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title_bigtext SEO
+										.panel-body
+
+											// Tab Type
+											.the-tabs.the-tabs-super
+
+												// Tab Menu
+												ul.nav.nav-tabs
+													li.pull-right: a(href="#seo-tab-en", data-toggle="tab") EN
+													li.active.pull-right: a(href="#seo-tab-th", data-toggle="tab") TH
+
+												// Tab Area
+												.tab-content
+
+													// SEO Tab EN
+													#seo-tab-en.tab-pane
+														.panel.panel-default
+															.panel-body
+																form
+																	.form-group
+																		label Title
+																		input.form-control
+																	.form-group
+																		label Description
+																		textarea.form-control(rows="3")
+																	.form-group
+																		label Keywords
+																		input(type="text", value="keyword1,keyword2,keyword3", data-role="tagsinput")
+																	.form-group
+																		label Picture <small>size 1200x630 px</small>
+																		input.filestyle(type="file", data-icon="false")
+
+													// SEO Tab TH
+													#seo-tab-th.tab-pane.active
+														.panel.panel-default
+															.panel-body
+																form
+																	.form-group
+																		label Title
+																		input.form-control
+																	.form-group
+																		label Description
+																		textarea.form-control(rows="3")
+																	.form-group
+																		label Keywords
+																		input(type="text", value="คีย์เวิรืด1,คีย์เวิรืด2,คีย์เวิรืด3", data-role="tagsinput")
+																	.form-group
+																		label Picture <small>size 1200x630 px</small>
+																		input.filestyle(type="file", data-icon="false")
+																		.thumbnail
+																			a.magnify.mfp-image(href="../uploads/pic-11.jpg", data-mfp-src="../uploads/pic-11.jpg")
+																				img.thumb-pic(src="../uploads/pic-11.jpg")
+																			button.btn.btn-default.btn-danger.btn-delete(type="button"): i.fa.fa-times
+
+
+								// Right side
+								.col-xs-4
+
+									// Publish
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Publish
+										.panel-body
+											.row
+												.col-xs-5
+													.checkbox.checkbox-warning._mt-5
+														input#sticky-post.styled(type="checkbox")
+														label(for="sticky-post") Stick this post
+												.col-xs-7
+													.sw-text
+														.sw-input-field
+															input.sw-toggle.sw-toggle-status(type="checkbox", data-on-text="Publish", data-off-text="Draft")
+														.sw-status-field
+										.panel-footer.separator
+											label Published on
+											.input-group
+												.input-group-addon.front-icon: i.fa.fa-calendar
+												input.form-control.datetime-picker.mask-datetime-noseconds(type="text", data-date-format="dd/mm/yyyy hh:ii")
+
+									// Category
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Categories
+										.panel-body
+											select.form-control.selectpicker(title="- Please choose -", multiple)
+												option Category 1
+												option Category 2
+												option Category 3
+
+									// Thumbnail
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Thumbnail
+										.panel-body
+
+											// Tab Type
+											.the-tabs.the-tabs-super
+
+												// Tab Menu
+												ul.nav.nav-tabs
+													li.pull-right: a(href="#thumbnail-tab-en", data-toggle="tab") EN
+													li.active.pull-right: a(href="#thumbnail-tab-th", data-toggle="tab") TH
+
+												// Tab Area
+												.tab-content
+
+													// Thumbnail Tab EN
+													#thumbnail-tab-en.tab-pane
+														.panel.panel-default
+															.panel-body
+																input.filestyle(type="file", data-icon="false")
+
+													// Thumbnail Tab TH
+													#thumbnail-tab-th.tab-pane.active
+														.panel.panel-default
+															.panel-body
+																label <small>size 300x250 px</small>
+																input.filestyle(type="file", data-icon="false")
+																.thumbnail
+																	a.magnify.mfp-image(href="../uploads/pic-10.jpg", data-mfp-src="../uploads/pic-10.jpg")
+																		img.thumb-pic(src="../uploads/pic-10.jpg")
+																	button.btn.btn-default.btn-danger.btn-delete(type="button"): i.fa.fa-times
+
+									// Tag
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Tags
+										.panel-body
+
+											// Tab Type
+											.the-tabs.the-tabs-super
+
+												// Tab Menu
+												ul.nav.nav-tabs
+													li.pull-right: a(href="#tag-tab-en", data-toggle="tab") EN
+													li.active.pull-right: a(href="#tag-tab-th", data-toggle="tab") TH
+
+												// Tab Area
+												.tab-content
+
+													// Tag Tab EN
+													#tag-tab-en.tab-pane
+														.panel.panel-default
+															.panel-body
+																input(type="text", value="Amsterdam,Beijing,A", data-role="tagsinput")
+
+													// Tag Tab TH
+													#tag-tab-th.tab-pane.active
+														.panel.panel-default
+															.panel-body
+																input(type="text", value="กรุงเทพ,นครปฐม,ก", data-role="tagsinput")
+
+						//- Footer include
+						include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

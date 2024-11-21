@@ -1,0 +1,93 @@
+/* DRAG & DROP
+---------------------------------------*/
+
+.dd {
+	display: block;
+	font-size: 1em;
+	list-style: none;
+	position: relative;
+}
+.dd-list {
+	display: block;
+	list-style: none;
+	position: relative;
+	.dd-list {
+		padding-left: 30px;
+	}
+}
+.dd-handle {
+	background-color: #fafafa;
+	border: 1px solid #ccc;
+	color: $text-color;
+	display: block;
+	margin: 5px 0;
+	padding: 5px 10px;
+	@include border-radius(3px);
+	&:hover {
+		background-color: #fff;
+		border-color: $theme-color;
+	}
+	> .delete {
+		float: right;
+	}
+}
+
+.dd-item,
+.dd-empty,
+.dd-placeholder {
+	display: block;
+	min-height: 34px;
+	margin: 5px 0;
+	padding: 0;
+	position: relative;
+}
+.dd-item {
+	> button {
+		background: transparent;
+		border: none;
+		cursor: pointer;
+		display: block;
+		float: left;
+		height: 100%;
+		width: 30px;
+		margin: 6px 0 4px 2px;
+		padding: 0;
+		overflow: hidden;
+		position: relative;
+		text-indent: -9999px;
+		white-space: nowrap;
+		&::before {
+			content: '\f055';
+			font-family: 'FontAwesome';
+			display: block;
+			position: absolute;
+			text-indent: 0;
+			width: 100%;
+		}
+		&[data-action="collapse"]::before {
+			content: '\f056';
+		}
+	}
+}
+.dd-placeholder, .dd-empty {
+	background-color: lighten($theme-color, 40%);
+	border: 1px dashed lighten($theme-color, 10%);
+	margin: 5px 0;
+	padding: 0;
+}
+.dd-dragel {
+	position: absolute;
+	pointer-events: none;
+	z-index: 9999;
+	> .dd-item .dd-handle {
+		margin-top: 0;
+	}
+	.dd-handle {
+		background-color: #fff;
+		border-color: $theme-color;
+		cursor: all-scroll;
+		font-size: 1.1em;
+		@include box-shadow(2px 4px 6px 0 rgba(0,0,0,.1));
+	}
+}
+

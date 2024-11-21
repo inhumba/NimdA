@@ -1,0 +1,1 @@
+$(function(){jQuery().inputmask&&$(".mask-email").inputmask("email")});

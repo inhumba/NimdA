@@ -1,0 +1,354 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Form Layouts";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Form Layouts
+
+				section.content
+
+					section.section.section-dark
+
+						.container-fluid
+							.row
+
+								.col-xs-12
+
+									// Anchor
+									nav
+										ol.anchor
+											li <i class="fa fa-arrow-circle-o-down"></i>
+											li: a(href="#form-default") Form Default
+											li: a(href="#form-horizontal") Form Horizontal
+											li: a(href="#form-inline") Form Inline
+											li: a(href="#form-stage") Form Stage
+											li: a(href="#form-icon") Form Icon
+											li: a(href="#form-size") Form Size
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								// Form Default
+								.col-xs-12
+									#form-default.anchor-pin
+									h4.title Form Default
+
+								.col-xs-8
+									.panel.panel-default
+										.panel-body
+											form
+												.form-group
+													label ป้ายชื่อ
+													input.form-control
+												.form-group
+													label Label
+													input.form-control
+												.form-group
+													label Textarea
+													textarea.form-control(rows="3")
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-body
+											form
+												.form-group
+													label ป้ายชื่อ
+													input.form-control
+												.form-group
+													label Label
+													input.form-control
+												.form-group
+													label Textarea
+													textarea.form-control(rows="3")
+
+								<hr>
+
+								// Form Horizontal
+								.col-xs-12
+									#form-horizontal.anchor-pin
+									h4.title Form Horizontal
+
+								.col-xs-8
+									.panel.panel-default
+										.panel-body
+											form.form-horizontal
+												.form-group
+													label.control-label.col-xs-2 ป้ายชื่อ
+													.col-xs-10
+														input.form-control
+												.form-group
+													label.control-label.col-xs-2 Label
+													.col-xs-10
+														input.form-control
+												.form-group
+													label.control-label.col-xs-2 Textarea
+													.col-xs-10
+														textarea.form-control(rows="3")
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-body
+											form.form-horizontal
+												.form-group
+													label.control-label.col-xs-3 ป้ายชื่อ
+													.col-xs-9
+														input.form-control
+												.form-group
+													label.control-label.col-xs-3 Label
+													.col-xs-9
+														input.form-control
+												.form-group
+													label.control-label.col-xs-3 Textarea
+													.col-xs-9
+														textarea.form-control(rows="3")
+
+								<hr>
+
+								// Form Inline
+								.col-xs-12
+									#form-inline.anchor-pin
+									h4.title Form Inline
+
+								.col-xs-12
+									.panel.panel-default
+										.panel-body
+											form.form-inline
+												.form-group
+													label ป้ายชื่อ
+													input.form-control
+												.form-group
+													label Label
+													input.form-control
+												.form-group
+													label Textarea
+													textarea.form-control(rows="3")
+
+								.col-xs-8
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title With no Label but Placeholder
+										.panel-body
+											form.form-inline
+												.form-group
+													label.sr-only ป้ายชื่อ
+													input.form-control(placeholder="ป้ายชื่อ")
+												.form-group
+													label.sr-only Label
+													input.form-control(placeholder="Label")
+												.form-group
+													label.sr-only Textarea
+													textarea.form-control(rows="3", placeholder="Textarea")
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title With Prepend and Append
+										.panel-body
+											form.form-inline
+												.form-group
+													label.sr-only ราคา
+													.input-group
+														.input-group-addon ฿
+														input.form-control(placeholder="ราคา")
+														.input-group-addon .00
+
+								<hr>
+
+								// Form Stage
+								.col-xs-12
+									#form-stage.anchor-pin
+									h4.title Form Stage
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Disabled
+										.panel-body
+											form
+												.form-group
+													label.sr-only ป้ายชื่อ
+													input.form-control(value="ป้ายชื่อ", disabled)
+												.form-group
+													label.sr-only Textarea
+													textarea.form-control(rows="3", disabled) Textarea
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Readonly
+										.panel-body
+											form
+												.form-group
+													label.sr-only ป้ายชื่อ
+													input.form-control(value="ป้ายชื่อ", readonly)
+												.form-group
+													label.sr-only Textarea
+													textarea.form-control(rows="3", readonly) Textarea
+
+								.col-xs-5
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Validation
+										.panel-body
+											form
+												.form-group.has-success
+													label.control-label Input with success
+													input.form-control
+													span.help-block ถูกต้อง
+												.form-group.has-warning
+													label.control-label Input with warning
+													input.form-control
+													span.help-block แนะนำให้แก้ไข
+												.form-group.has-error
+													label.control-label Input with error
+													input.form-control
+													span.help-block ผิดเต็ม ๆ
+
+								.col-xs-7
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Validation with Horizontal
+										.panel-body
+											form.form-horizontal
+												.form-group.has-success
+													label.control-label.col-xs-3 Input with success
+													.col-xs-9
+														input.form-control
+														span.help-block ถูกต้อง
+												.form-group.has-warning
+													label.control-label.col-xs-3 Input with warning
+													.col-xs-9
+														input.form-control
+														span.help-block แนะนำให้แก้ไข
+												.form-group.has-error
+													label.control-label.col-xs-3 Input with error
+													.col-xs-9
+														input.form-control
+														span.help-block ผิดเต็ม ๆ
+
+								<hr>
+
+								// Form Icon
+								.col-xs-12
+									#form-icon.anchor-pin
+									h4.title Form Icon
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+											form
+												.form-group.has-feedback
+													label.control-label Icon in front (use prepend)
+													.input-group
+														.input-group-addon.front-icon: i.fa.fa-user
+														input.form-control(placeholder="username")
+												.form-group.has-feedback.has-feedback-front
+													label.control-label Icon in front
+													input.form-control(placeholder="email")
+													span.glyphicon.glyphicon-envelope.form-control-feedback
+												.form-group.has-feedback
+													label.control-label Icons in back
+													input.form-control(placeholder="search")
+													span.glyphicon.glyphicon-search.form-control-feedback
+
+								.col-xs-6
+									.panel.panel-default
+										.panel-body
+											form
+												.form-group.has-success.has-feedback
+													label.control-label Success icon
+													input.form-control
+													span.glyphicon.glyphicon-ok.form-control-feedback
+												.form-group.has-warning.has-feedback
+													label.control-label Warning icon
+													input.form-control
+													span.glyphicon.glyphicon-warning-sign.form-control-feedback
+												.form-group.has-error.has-feedback
+													label.control-label Error icon
+													input.form-control
+													span.glyphicon.glyphicon-remove.form-control-feedback
+
+								<hr>
+
+								// Form Size
+								.col-xs-12
+									#form-size.anchor-pin
+									h4.title Form Size
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Height sizing
+										.panel-body
+											form
+												.form-group
+													input.form-control.input-lg(placeholder="Big")
+												.form-group
+													input.form-control(placeholder="Default")
+												.form-group
+													input.form-control.input-sm(placeholder="Small")
+
+								.col-xs-8
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Horizontal height sizing
+										.panel-body
+											form.form-horizontal
+												.form-group.form-group-lg
+													label.control-label.col-xs-3 Large Label
+													.col-xs-9
+														input.form-control
+												.form-group
+													label.control-label.col-xs-3 Default Label
+													.col-xs-9
+														input.form-control
+												.form-group.form-group-sm
+													label.control-label.col-xs-3 Small Label
+													.col-xs-9
+														input.form-control
+
+								.col-xs-12
+									.panel.panel-default
+										.panel-heading
+											h2.panel-title Width sizing
+										.panel-body
+											form
+												.row
+													.form-group.col-xs-5
+														input.form-control(placeholder="5/12")
+													.form-group.col-xs-4
+														input.form-control(placeholder="4/12")
+													.form-group.col-xs-3
+														input.form-control(placeholder="3/12")
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

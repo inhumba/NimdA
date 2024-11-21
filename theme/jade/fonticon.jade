@@ -1,0 +1,73 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Font Icons";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Font Icons
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-6
+
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Font Awesome 4.6.2
+										.panel-body
+
+											h6._mb-10 Link <a href="http://fontawesome.io/icons/">http://fontawesome.io/icons/</a>
+
+											._textcenter
+												pre &lt;i class="fa fa-hand-spock-o"&gt;&lt;/i&gt;
+												p
+												p(style="font-size:7em") <i class="fa fa-hand-scissors-o"></i> <i class="fa fa-hand-rock-o"></i> <i class="fa fa-hand-paper-o"></i>
+
+								.col-xs-6
+
+									.panel.panel-default
+										.panel-heading.separator
+											h2.panel-title Bootstrap 3.3.6
+										.panel-body
+
+												h6._mb-10 Link <a href="http://getbootstrap.com/components/#glyphicons-glyphs">http://getbootstrap.com/components/#glyphicons-glyphs</a>
+
+												._textcenter
+													pre &lt;span class="glyphicon glyphicon-thumbs-up"&gt;&lt;/span&gt;
+													p
+													p(style="font-size:7em") <span class="glyphicon glyphicon-hand-right"></span> <span class="glyphicon glyphicon-heart-empty"></span> <span class="glyphicon glyphicon-hand-left"></span>
+
+
+
+						//- Footer include
+						include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

@@ -1,0 +1,62 @@
+doctype html
+html(lang="en", class="no-js")
+	head
+
+		//- Meta include
+		- var title = "Editor";
+		include meta
+
+	body
+
+		.wrapper
+
+			//- Adminbar include
+			//- include adminbar
+
+			//- Header include
+			include header
+
+			//- Sidebar Left include
+			//- include sidebarleft
+
+			// Main
+			main.main
+
+				// Page Topic
+				.topbar
+					h1 <i class="fa fa-bullseye"></i> Editor
+
+				section.content
+
+					section.section.section-base
+
+						.container-fluid
+							.row
+
+								.col-xs-8
+									.panel.panel-default
+										.panel-body
+											form
+												.form-group
+													label Full Toolbar
+													textarea.editor-full.form-control(rows="50")
+												.form-group
+													label Standard Toolbar
+													textarea.editor.form-control(rows="50")
+
+								.col-xs-4
+									.panel.panel-default
+										.panel-body
+											form
+												.form-group
+													label Basic Toolbar
+													textarea.editor-mini.form-control(rows="20")
+
+								//- Footer include
+								include footer
+
+			//- Sidebar Right include
+			//- include sidebarright
+
+		//- Script inclide
+		include script

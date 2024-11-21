@@ -1,0 +1,1 @@
+$(function(){var e=document.getElementById("captcha-range");noUiSlider.create(e,{start:[3],step:1,range:{min:[2],max:[4]},tooltips:[!0],format:wNumb({decimals:0})});var n=document.getElementById("captcha-range-value");e.noUiSlider.on("update",function(e,t){n.innerHTML=e[t]}),n.addEventListener("change",function(){e.noUiSlider.set(this.value)})});

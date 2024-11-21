@@ -1,0 +1,106 @@
+/* PACE
+---------------------------------------*/
+
+.pace {
+	-webkit-pointer-events: none;
+	pointer-events: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+.pace-running {
+	.wrapper {
+		display: none;
+		@include opacity(0);
+	}
+}
+.pace-done {
+	.wrapper {
+		display: block;
+		@include opacity(1);
+	}
+}
+.pace-inactive {
+	display: none;
+}
+.pace .pace-progress {
+	background: $theme-color;
+	height: 7px;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 100%;
+	z-index: 2000;
+}
+
+/* Bar Progress */
+.pace .pace-progress-inner {
+	display: block;
+	height: 100%;
+	width: 100px;
+	position: absolute;
+	right: 0;
+	@include box-shadow(0 0 10px $theme-color, 0 0 5px $theme-color);
+	@include opacity(1);
+	@include transform(rotate(3deg) translate(0px, -4px));
+}
+
+/* Loading Animation */
+.pace .pace-activity {
+	border: 7px solid transparent;
+	border-top-color: $theme-color;
+	border-right-color: $theme-color;
+	display: block;
+	height: 50px;
+	width: 50px;
+	margin-left: -25px;
+	padding: 10px;
+	position: fixed;
+	top: 40%;
+	left: 50%;
+	z-index: 2000;
+	@include border-radius(100%);
+	@include animation(loading-spin 500ms linear infinite);
+	&:after {
+		background-color: $theme-color;
+		content: '';
+		display: block;
+		height: 100%;
+		width: 100%;
+		@include border-radius(100%);
+		@include animation(loading-scale 0.3s 0s ease-in-out infinite);
+	}
+	// &:after {
+	// 	border: 3px solid transparent;
+	// 	border-bottom-color: $theme-color;
+	// 	border-right-color: $theme-color;
+	// 	content: '';
+	// 	display: block;
+	// 	height: 100%;
+	// 	width: 100%;
+	// 	@include border-radius(100%);
+	// }
+}
+
+/* Spin Animation */
+@include keyframes(loading-spin) {
+	0% {
+		@include transform(rotate(0deg));
+	}
+	100% {
+		@include transform(rotate(360deg));
+	}
+}
+
+/* Scale Animation */
+@include keyframes(loading-scale) {
+	0% {
+		@include transform(scale(0.0));
+	}
+	100% {
+		@include transform(scale(1.0));
+		@include opacity(0.1);
+	}
+}
+
+

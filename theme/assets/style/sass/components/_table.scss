@@ -1,0 +1,95 @@
+/* TABLE
+---------------------------------------*/
+
+$table-border-color: #f9f9f9;
+.panel-table {
+	.table-bottom {
+		.input-group-addon {
+			background-color: transparent;
+			border-color: transparent;
+		}
+	}
+	.table-bordered > thead > tr > th,
+	.table-bordered > tbody > tr > th,
+	.table-bordered > tfoot > tr > th,
+	.table-bordered > thead > tr > td,
+	.table-bordered > tbody > tr > td,
+	.table-bordered > tfoot > tr > td {
+		border-color: $table-border-color;
+	}
+	.table-striped > tbody > tr:nth-of-type(2n+1) {
+		background-color: #fcfcfc;
+	}
+	.table-hover > tbody > tr:hover {
+		background-color: $table-border-color;
+	}
+	> .table-bordered > thead > tr:first-child > th {
+		border-bottom: 3px solid darken($table-border-color, 6%);
+	}
+	> .table-bordered > thead > tr > th {
+		border-color: darken($table-border-color, 6%);
+	}
+	.table {
+		margin-bottom: 0;
+		.btn {
+			margin-right: 4px;
+		}
+		.checkbox {
+			margin: 0 0 0 4px;
+			padding-top: 0;
+			label {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+.table {
+	thead > tr > th {
+		background-color: darken($table-border-color, 2%);
+		color: $black;
+		font-family: $font-boon600;
+		font-size: 1.2em;
+		vertical-align: middle;
+	}
+	thead > tr > td,
+	thead > tr > th,
+	tbody > tr > th,
+	tbody > tr > td,
+	tfoot > tr > th,
+	tfoot > tr > td {
+		padding: 10px 15px;
+	}
+	.tb-thumb {
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	.th-picture {
+		width: 100px;
+	}
+	.th-status {
+		width: 80px;
+	}
+	.th-action {
+		width: 150px;
+	}
+}
+
+.table-dnd {
+	.th-no {
+		text-align: center;
+		width: 60px;
+	}
+	.label {
+		display: block;
+		font-size: 100%;
+		margin: 5px 0;
+		padding: 10px 0;
+	}
+	.dd-item {
+		height: 34px;
+	}
+}
+
+

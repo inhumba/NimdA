@@ -1,0 +1,195 @@
+/* GENERAL
+---------------------------------------*/
+body {
+	background-color: $body-color;
+}
+
+.wrapper {
+	height: 100%;
+	min-width: 320px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	left: 0;
+	@include opacity(0);
+	@include transition(all 0.3s);
+}
+
+
+
+/* HEADER
+---------------------------------------*/
+.header {
+	background-color: $theme-color;
+	height: $header-height;
+	padding: 20px 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+}
+
+.brand {
+	float: left;
+	> a {
+		color: $brand-font-color;
+		font: {
+			family: $brand-font-family;
+			size: $brand-font-size;
+		}
+	}
+}
+
+.topnav {
+	.navbar-nav {
+		margin-right: 0;
+		margin-left: 20px;
+	}
+	.navbar-nav > li > a {
+		color: $topnav-font-color;
+		font: {
+			family: $topnav-font-family;
+			size: $topnav-font-size;
+		}
+		margin: 12px 0;
+		padding: 0 10px;
+		&.separate {
+			border-left: 1px solid rgba(256,256,256,.7);
+			margin-left: 5px;
+			padding-left: 15px;
+		}
+		&.user {
+			margin: 7px 0;
+		}
+	}
+	.nav > li > a:focus,
+	.nav > li > a:hover {
+		background-color: transparent;
+	}
+	.avatar {
+		height: 30px;
+		width: 30px;
+		margin-right: 10px;
+	}
+	.navbar-bg {
+		background-color: rgba(256,256,256,.1);
+		padding-right: 3px;
+		padding-left: 3px;
+		@include border-radius(3px);
+	}
+}
+
+.horizontalnav {
+	background-color: $horizontalnav-bg;
+	border-top: 1px solid rgba(256,256,256,.2);
+	height: $horizontalnav-height;
+	padding: 0 30px;
+	position: fixed;
+	top: $header-height;
+	width: 100%;
+	z-index: 90;
+}
+
+
+
+/* MAIN
+---------------------------------------*/
+.main {
+	background-color: $main-color;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-top: $header-height + $horizontalnav-height + $topbar-height;
+	position: absolute;
+	right: 0;
+	left: 0;
+	@include transition(transform 0.5s ease 0s);
+}
+
+.topbar {
+	background-color: $white;
+	height: $topbar-height;
+	padding: 10px 30px 0;
+	position: fixed;
+	top: $header-height + $horizontalnav-height;
+	width: 100%;
+	z-index: 80;
+	@include box-shadow(0 2px 2px rgba(0,0,0,.05), 0 1px 0 rgba(0,0,0,.05));
+	h1 {
+		color: $topbar-font-color;
+		float: left;
+		font: {
+			family: $topbar-font-family;
+			size: $topbar-font-size;
+		}
+		margin: 5px 20px 0 0;
+		> i {
+			margin-right: 5px;
+		}
+	}
+}
+.topbar-button {
+	margin: 0;
+}
+
+.content {
+	min-height: 400px;
+}
+
+
+/* SECTION
+---------------------------------------*/
+.section {
+	padding: 30px 15px 15px;
+}
+@each $st in dark, base, light {
+	.section-#{$st} {
+		background-color: map-get($section-color, #{$st});
+	}
+}
+
+.subitem {
+	background: url(#{$imgpath}/subitem.png) no-repeat top left;
+	margin-left: 15px;
+	padding-left: 15px;
+}
+
+
+/* FOOTER
+---------------------------------------*/
+.footer {
+	border-top: 1px solid #e5e5e5;
+	margin: 20px 0 0;
+	padding: 20px 0 5px;
+	@extend %cf;
+	p {
+		color: #aaa;
+		font-family: $font-boon300;
+		font-size: 1em;
+	}
+	a {
+		color: $link-color;
+	}
+}
+
+
+
+/* Retina Display
+---------------------------------------*/
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+	// .brand-logo {
+	// 	background-image: url(#{$imgpath}/logo@2x.png);
+	// 	@include background-size(100%);
+	// }
+
+}
+
+
